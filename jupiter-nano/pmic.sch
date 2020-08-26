@@ -100,7 +100,7 @@ F 3 "" H 1750 3950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5000 3750 3650 3750
+	5000 3750 3750 3750
 Text GLabel 3650 3750 0    50   Input ~ 0
 PMIC_LBO
 Wire Wire Line
@@ -883,4 +883,439 @@ F 3 "" H 4550 5000 50  0001 C CNN
 	1    4550 5000
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	3750 3750 3750 5400
+Connection ~ 3750 3750
+Wire Wire Line
+	3750 3750 3650 3750
+$Comp
+L Device:R_Small R3
+U 1 1 5F6066C1
+P 3750 5500
+F 0 "R3" H 3809 5546 50  0000 L CNN
+F 1 "10K 1%" H 3809 5455 50  0000 L CNN
+F 2 "" H 3750 5500 50  0001 C CNN
+F 3 "~" H 3750 5500 50  0001 C CNN
+	1    3750 5500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3750 5600 3750 5700
+$Comp
+L power:GND #PWR?
+U 1 1 5F60CEF0
+P 3750 5700
+F 0 "#PWR?" H 3750 5450 50  0001 C CNN
+F 1 "GND" H 3755 5527 50  0000 C CNN
+F 2 "" H 3750 5700 50  0001 C CNN
+F 3 "" H 3750 5700 50  0001 C CNN
+	1    3750 5700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5000 3150 4700 3150
+Wire Wire Line
+	4700 3150 4700 2850
+Wire Wire Line
+	4700 2850 5000 2850
+Wire Wire Line
+	4700 2850 4550 2850
+Connection ~ 4700 2850
+$Comp
+L power:GND #PWR?
+U 1 1 5F61A7E3
+P 4550 2850
+F 0 "#PWR?" H 4550 2600 50  0001 C CNN
+F 1 "GND" V 4555 2722 50  0000 R CNN
+F 2 "" H 4550 2850 50  0001 C CNN
+F 3 "" H 4550 2850 50  0001 C CNN
+	1    4550 2850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5000 2650 4800 2650
+$Comp
+L Device:R_Small R12
+U 1 1 5F64F8B7
+P 4700 2650
+F 0 "R12" V 4800 2650 50  0000 C CNN
+F 1 "2.43K 1%" V 4750 2950 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0201_0603Metric" H 4700 2650 50  0001 C CNN
+F 3 "~" H 4700 2650 50  0001 C CNN
+	1    4700 2650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4600 2650 4550 2650
+$Comp
+L power:GND #PWR?
+U 1 1 5F656E22
+P 4550 2650
+F 0 "#PWR?" H 4550 2400 50  0001 C CNN
+F 1 "GND" V 4555 2522 50  0000 R CNN
+F 2 "" H 4550 2650 50  0001 C CNN
+F 3 "" H 4550 2650 50  0001 C CNN
+	1    4550 2650
+	0    1    1    0   
+$EndComp
+$Comp
+L Transistor_FET:BSS138 Q3
+U 1 1 5F66BE91
+P 1300 7150
+F 0 "Q3" H 1505 7196 50  0000 L CNN
+F 1 "BSS138" H 1505 7105 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 1500 7075 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/BS/BSS138.pdf" H 1300 7150 50  0001 L CNN
+	1    1300 7150
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Transistor_FET:BSS138 Q5
+U 1 1 5F684C12
+P 2300 7150
+F 0 "Q5" H 2505 7196 50  0000 L CNN
+F 1 "BSS138" H 2505 7105 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 2500 7075 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/BS/BSS138.pdf" H 2300 7150 50  0001 L CNN
+	1    2300 7150
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2200 6950 2200 6900
+Wire Wire Line
+	2200 6900 1750 6900
+Wire Wire Line
+	1750 6900 1750 7150
+Wire Wire Line
+	1750 7150 1500 7150
+Wire Wire Line
+	2200 7350 2200 7450
+Wire Wire Line
+	1200 7350 1200 7450
+$Comp
+L power:GND #PWR?
+U 1 1 5F6CBF6E
+P 1200 7450
+F 0 "#PWR?" H 1200 7200 50  0001 C CNN
+F 1 "GND" H 1205 7277 50  0000 C CNN
+F 2 "" H 1200 7450 50  0001 C CNN
+F 3 "" H 1200 7450 50  0001 C CNN
+	1    1200 7450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F6CCAD6
+P 2200 7450
+F 0 "#PWR?" H 2200 7200 50  0001 C CNN
+F 1 "GND" H 2205 7277 50  0000 C CNN
+F 2 "" H 2200 7450 50  0001 C CNN
+F 3 "" H 2200 7450 50  0001 C CNN
+	1    2200 7450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2500 7150 2650 7150
+Text GLabel 2850 7150 2    50   Input ~ 0
+nPBSTAT
+Wire Wire Line
+	2200 6900 2200 6650
+Connection ~ 2200 6900
+Wire Wire Line
+	2650 7150 2650 6650
+Connection ~ 2650 7150
+Wire Wire Line
+	2650 7150 2850 7150
+Wire Wire Line
+	1200 6950 1200 6800
+Text GLabel 2650 6250 1    50   Input ~ 0
+VSYS_5V
+Text GLabel 2200 6250 1    50   Input ~ 0
+VSYS_5V
+Text GLabel 1200 6250 1    50   Input ~ 0
+VDDBU
+$Comp
+L Device:R_Small R?
+U 1 1 5F7027C3
+P 2650 6550
+F 0 "R?" H 2709 6596 50  0000 L CNN
+F 1 "R_Small" H 2709 6505 50  0000 L CNN
+F 2 "" H 2650 6550 50  0001 C CNN
+F 3 "~" H 2650 6550 50  0001 C CNN
+	1    2650 6550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5F70325F
+P 2200 6550
+F 0 "R?" H 2259 6596 50  0000 L CNN
+F 1 "R_Small" H 2259 6505 50  0000 L CNN
+F 2 "" H 2200 6550 50  0001 C CNN
+F 3 "~" H 2200 6550 50  0001 C CNN
+	1    2200 6550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5F703D5F
+P 1200 6550
+F 0 "R?" H 1259 6596 50  0000 L CNN
+F 1 "R_Small" H 1259 6505 50  0000 L CNN
+F 2 "" H 1200 6550 50  0001 C CNN
+F 3 "~" H 1200 6550 50  0001 C CNN
+	1    1200 6550
+	1    0    0    -1  
+$EndComp
+Connection ~ 1200 6800
+Wire Wire Line
+	1200 6800 1200 6650
+Wire Wire Line
+	1200 6250 1200 6450
+Wire Wire Line
+	2200 6250 2200 6450
+Wire Wire Line
+	2650 6250 2650 6450
+Wire Wire Line
+	950  6800 1200 6800
+Text GLabel 950  6800 0    50   Input ~ 0
+WKUP
+$Comp
+L Transistor_FET:BSS138 Q1
+U 1 1 5F78035C
+P 1300 1650
+F 0 "Q1" H 1504 1696 50  0000 L CNN
+F 1 "BSS138" H 1504 1605 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 1500 1575 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/BS/BSS138.pdf" H 1300 1650 50  0001 L CNN
+	1    1300 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_FET:BSS138 Q2
+U 1 1 5F783996
+P 2150 1650
+F 0 "Q2" H 2354 1696 50  0000 L CNN
+F 1 "BSS138" H 2354 1605 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 2350 1575 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/BS/BSS138.pdf" H 2150 1650 50  0001 L CNN
+	1    2150 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_FET:BSS138 Q4
+U 1 1 5F787F28
+P 2100 2750
+F 0 "Q4" H 2304 2796 50  0000 L CNN
+F 1 "BSS138" H 2304 2705 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 2300 2675 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/BS/BSS138.pdf" H 2100 2750 50  0001 L CNN
+	1    2100 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R6
+U 1 1 5F78CA6C
+P 1800 3000
+F 0 "R6" H 1859 3046 50  0000 L CNN
+F 1 "100K" H 1859 2955 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0201_0603Metric" H 1800 3000 50  0001 C CNN
+F 3 "~" H 1800 3000 50  0001 C CNN
+	1    1800 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R15
+U 1 1 5F78E7C6
+P 3050 2400
+F 0 "R15" V 2854 2400 50  0000 C CNN
+F 1 "49.9K 1%" V 2945 2400 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0201_0603Metric" H 3050 2400 50  0001 C CNN
+F 3 "~" H 3050 2400 50  0001 C CNN
+	1    3050 2400
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R5
+U 1 1 5F78F490
+P 2250 1000
+F 0 "R5" H 2309 1046 50  0000 L CNN
+F 1 "100K 1%" H 2309 955 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0201_0603Metric" H 2250 1000 50  0001 C CNN
+F 3 "~" H 2250 1000 50  0001 C CNN
+	1    2250 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 5F790156
+P 1600 2750
+F 0 "C1" V 1348 2750 50  0000 C CNN
+F 1 "0.1 uF" V 1439 2750 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0201_0603Metric" H 1638 2600 50  0001 C CNN
+F 3 "~" H 1600 2750 50  0001 C CNN
+	1    1600 2750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5000 2950 3950 2950
+Wire Wire Line
+	3150 2400 3450 2400
+Wire Wire Line
+	3450 2400 3450 2700
+Connection ~ 3450 2400
+Text GLabel 3450 2700 3    50   Input ~ 0
+RESET
+$Comp
+L Switch:SW_Push SW?
+U 1 1 5F7E5404
+P 2850 2850
+F 0 "SW?" V 2896 2802 50  0000 R CNN
+F 1 "SW_Push" V 2805 2802 50  0000 R CNN
+F 2 "" H 2850 3050 50  0001 C CNN
+F 3 "~" H 2850 3050 50  0001 C CNN
+	1    2850 2850
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2950 2400 2850 2400
+Wire Wire Line
+	2850 2400 2850 2600
+Wire Wire Line
+	2850 3050 2850 3200
+$Comp
+L power:GND #PWR?
+U 1 1 5F8141B2
+P 2850 3200
+F 0 "#PWR?" H 2850 2950 50  0001 C CNN
+F 1 "GND" H 2855 3027 50  0000 C CNN
+F 2 "" H 2850 3200 50  0001 C CNN
+F 3 "" H 2850 3200 50  0001 C CNN
+	1    2850 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2850 2600 3000 2600
+Connection ~ 2850 2600
+Wire Wire Line
+	2850 2600 2850 2650
+Text GLabel 3000 2600 2    50   Input ~ 0
+POWER
+Wire Wire Line
+	2850 2400 2200 2400
+Wire Wire Line
+	2200 2400 2200 2550
+Connection ~ 2850 2400
+Wire Wire Line
+	1400 2750 1450 2750
+$Comp
+L Device:R_Small R2
+U 1 1 5F78DB75
+P 1300 2750
+F 0 "R2" V 1104 2750 50  0000 C CNN
+F 1 "10K 1%" V 1195 2750 50  0000 C CNN
+F 2 "" H 1300 2750 50  0001 C CNN
+F 3 "~" H 1300 2750 50  0001 C CNN
+	1    1300 2750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1800 3100 1800 3200
+$Comp
+L power:GND #PWR?
+U 1 1 5F85C54C
+P 1800 3200
+F 0 "#PWR?" H 1800 2950 50  0001 C CNN
+F 1 "GND" H 1805 3027 50  0000 C CNN
+F 2 "" H 1800 3200 50  0001 C CNN
+F 3 "" H 1800 3200 50  0001 C CNN
+	1    1800 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1800 2900 1800 2750
+Wire Wire Line
+	1900 2750 1800 2750
+Wire Wire Line
+	1800 2750 1750 2750
+Connection ~ 1800 2750
+Wire Wire Line
+	1200 2750 1000 2750
+Text GLabel 950  2750 0    50   Input ~ 0
+SHDN
+Wire Wire Line
+	1100 1650 1000 1650
+Wire Wire Line
+	1000 1650 1000 2750
+Connection ~ 1000 2750
+Wire Wire Line
+	1000 2750 950  2750
+Wire Wire Line
+	1400 1850 1400 1950
+Wire Wire Line
+	1400 1950 2250 1950
+Wire Wire Line
+	2250 1950 2250 1850
+Wire Wire Line
+	2250 1950 2250 2000
+Connection ~ 2250 1950
+$Comp
+L power:GND #PWR?
+U 1 1 5F8990CB
+P 2250 2000
+F 0 "#PWR?" H 2250 1750 50  0001 C CNN
+F 1 "GND" H 2255 1827 50  0000 C CNN
+F 2 "" H 2250 2000 50  0001 C CNN
+F 3 "" H 2250 2000 50  0001 C CNN
+	1    2250 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1400 1450 1400 1350
+Wire Wire Line
+	1400 1350 1800 1350
+Wire Wire Line
+	1800 1350 1800 1650
+Wire Wire Line
+	1800 1650 1950 1650
+Wire Wire Line
+	2250 1450 2250 1300
+$Comp
+L Device:R_Small R1
+U 1 1 5F8B30AD
+P 1400 1000
+F 0 "R1" H 1459 1046 50  0000 L CNN
+F 1 "47K" H 1459 955 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0201_0603Metric" H 1400 1000 50  0001 C CNN
+F 3 "~" H 1400 1000 50  0001 C CNN
+	1    1400 1000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1400 1350 1400 1100
+Connection ~ 1400 1350
+Wire Wire Line
+	2250 1300 2250 1100
+Connection ~ 2250 1300
+Wire Wire Line
+	1400 900  1400 800 
+Wire Wire Line
+	1400 800  2250 800 
+Wire Wire Line
+	2250 800  2250 900 
+Wire Wire Line
+	1400 800  950  800 
+Connection ~ 1400 800 
+Text GLabel 950  800  0    50   Input ~ 0
+VSYS_5V
+Wire Wire Line
+	3750 3350 3750 2400
+Wire Wire Line
+	3750 3350 5000 3350
+Wire Wire Line
+	3450 2400 3750 2400
+Wire Wire Line
+	3950 2950 3950 1300
+Wire Wire Line
+	2250 1300 3950 1300
 $EndSCHEMATC
