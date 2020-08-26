@@ -1,0 +1,5 @@
+(sym_lib_table
+  (lib (name ACT8945AQJ305-T)(type Legacy)(uri ${KIPRJMOD}/libraries/ACT8945AQJ305-T.lib)(options "")(descr ""))
+  (lib (name MCP2200-I_MQ)(type Legacy)(uri ${KIPRJMOD}/libraries/MCP2200-I_MQ.lib)(options "")(descr ""))
+  (lib (name ATSAMA5D27C-LD1G)(type Legacy)(uri ${KIPRJMOD}/libraries/ATSAMA5D27C-LD1G.lib)(options "")(descr ""))
+)
