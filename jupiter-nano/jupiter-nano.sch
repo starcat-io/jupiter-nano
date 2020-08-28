@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr USLetter 11000 8500
 encoding utf-8
-Sheet 1 9
+Sheet 1 11
 Title ""
 Date ""
 Rev ""
@@ -14,13 +14,13 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Sheet
-S 982  871  1869 1642
+S 8750 6350 1600 200 
 U 5F395DDA
-F0 "SAMA5D27" 50
-F1 "sama5d27.sch" 50
+F0 "SAMA5D27 No Connect Pins" 50
+F1 "sama5d27-nc.sch" 50
 $EndSheet
 $Sheet
-S 7713 4683 1893 1601
+S 5250 2900 1893 1601
 U 5F395ED8
 F0 "USB-UART bridge" 50
 F1 "USB-UART-bridge.sch" 50
@@ -44,21 +44,33 @@ F0 "SAMA5D27 PIO" 50
 F1 "sama5d27-pio.sch" 50
 $EndSheet
 $Sheet
-S 8630 940  1727 1523
+S 3200 2900 1727 1523
 U 5F4A5621
 F0 "SAMA5D27 Clock" 50
 F1 "sama5d27-clock.sch" 50
 $EndSheet
 $Sheet
-S 3443 890  1937 1570
+S 3150 800  1937 1570
 U 5F395E67
-F0 "SAMA5D27 Power" 50
-F1 "sama5d27-power.sch" 50
+F0 "SAMA5D27 Power 1" 50
+F1 "sama5d27-power1.sch" 50
 $EndSheet
 $Sheet
-S 5812 913  1936 1539
+S 900  800  1936 1539
 U 5F549DCF
 F0 "PMIC" 50
 F1 "pmic.sch" 50
+$EndSheet
+$Sheet
+S 5350 850  2000 1500
+U 5FB0A4D9
+F0 "SAMA5D27 Power 2" 50
+F1 "sama5d27-power2.sch" 50
+$EndSheet
+$Sheet
+S 7600 850  1950 1450
+U 5FD740BF
+F0 "SAMA5D27 Power 3" 50
+F1 "sama5d27-power3.sch" 50
 $EndSheet
 $EndSCHEMATC
