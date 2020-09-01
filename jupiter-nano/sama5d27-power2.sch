@@ -138,17 +138,8 @@ Wire Wire Line
 Wire Wire Line
 	7150 1450 6950 1450
 Wire Wire Line
-	6950 1550 7150 1550
-Wire Wire Line
-	7150 1550 7150 1650
-Wire Wire Line
-	7150 1650 6950 1650
-Wire Wire Line
 	7150 1350 7500 1350
 Connection ~ 7150 1350
-Wire Wire Line
-	7150 1550 7500 1550
-Connection ~ 7150 1550
 Text GLabel 7500 1550 2    50   Input ~ 0
 VDDIOP2
 Text GLabel 7500 1350 2    50   Input ~ 0
@@ -270,11 +261,261 @@ Connection ~ 4100 3550
 Wire Wire Line
 	4100 3550 4100 3650
 Wire Wire Line
-	6950 2250 7500 2250
+	6950 2250 7050 2250
 Text GLabel 7500 2250 2    50   Input ~ 0
 VDD_3V3
+$Comp
+L Device:C C?
+U 1 1 5FAB62AA
+P 7400 3500
+AR Path="/5F395E67/5FAB62AA" Ref="C?"  Part="1" 
+AR Path="/5FB0A4D9/5FAB62AA" Ref="C56"  Part="1" 
+F 0 "C56" H 7400 3600 50  0000 L CNN
+F 1 "0.1uF" H 7400 3400 50  0000 L CNN
+F 2 "" H 7438 3350 50  0001 C CNN
+F 3 "~" H 7400 3500 50  0001 C CNN
+	1    7400 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5FAB62B0
+P 7050 3500
+AR Path="/5F395E67/5FAB62B0" Ref="C?"  Part="1" 
+AR Path="/5FB0A4D9/5FAB62B0" Ref="C52"  Part="1" 
+F 0 "C52" H 7050 3600 50  0000 L CNN
+F 1 "0.1uF" H 7050 3400 50  0000 L CNN
+F 2 "" H 7088 3350 50  0001 C CNN
+F 3 "~" H 7050 3500 50  0001 C CNN
+	1    7050 3500
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
-	6950 2450 7500 2450
-Text GLabel 7500 2450 2    50   Input ~ 0
-VDD_UTMI
+	7050 3650 7050 3800
+Wire Wire Line
+	7400 3650 7400 3800
+Wire Wire Line
+	7400 3800 7250 3800
+$Comp
+L power:GND #PWR?
+U 1 1 5FAB62BD
+P 7250 3950
+AR Path="/5F395E67/5FAB62BD" Ref="#PWR?"  Part="1" 
+AR Path="/5FB0A4D9/5FAB62BD" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 7250 3700 50  0001 C CNN
+F 1 "GND" H 7255 3777 50  0000 C CNN
+F 2 "" H 7250 3950 50  0001 C CNN
+F 3 "" H 7250 3950 50  0001 C CNN
+	1    7250 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7250 3800 7250 3950
+Connection ~ 7250 3800
+Wire Wire Line
+	7250 3800 7050 3800
+Wire Wire Line
+	6950 1550 7500 1550
+Text GLabel 7500 1650 2    50   Input ~ 0
+VDD_3V3
+Wire Wire Line
+	6950 2550 7500 2550
+Text GLabel 7500 2550 2    50   Input ~ 0
+VDD_UTIMII
+Wire Wire Line
+	7050 2250 7050 3350
+Connection ~ 7050 2250
+Wire Wire Line
+	7050 2250 7500 2250
+Wire Wire Line
+	6950 1650 7400 1650
+Wire Wire Line
+	7400 1650 7400 3350
+Connection ~ 7400 1650
+Wire Wire Line
+	7400 1650 7500 1650
+Wire Wire Line
+	6950 1850 7500 1850
+Text GLabel 7500 1850 2    50   Input ~ 0
+VDDOSC
+Wire Wire Line
+	8250 2450 8250 3800
+Wire Wire Line
+	8250 3800 8700 3800
+Wire Wire Line
+	6950 2450 8250 2450
+$Comp
+L Device:Ferrite_Bead_Small FB?
+U 1 1 5FAFAB51
+P 9650 3800
+AR Path="/5F395E67/5FAFAB51" Ref="FB?"  Part="1" 
+AR Path="/5FD740BF/5FAFAB51" Ref="FB?"  Part="1" 
+AR Path="/5FB0A4D9/5FAFAB51" Ref="FB7"  Part="1" 
+F 0 "FB7" V 9413 3800 50  0000 C CNN
+F 1 "BLM15AG100SH1D" V 9504 3800 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" V 9580 3800 50  0001 C CNN
+F 3 "~" H 9650 3800 50  0001 C CNN
+	1    9650 3800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9750 3800 10350 3800
+Text GLabel 10350 3800 2    50   Input ~ 0
+VDDCORE
+$Comp
+L Device:C C?
+U 1 1 5FB1650F
+P 8700 4150
+AR Path="/5F395E67/5FB1650F" Ref="C?"  Part="1" 
+AR Path="/5FB0A4D9/5FB1650F" Ref="C39"  Part="1" 
+F 0 "C39" H 8700 4250 50  0000 L CNN
+F 1 "4.7uF" H 8700 4050 50  0000 L CNN
+F 2 "" H 8738 4000 50  0001 C CNN
+F 3 "~" H 8700 4150 50  0001 C CNN
+	1    8700 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5FB212DA
+P 9100 4150
+AR Path="/5F395E67/5FB212DA" Ref="C?"  Part="1" 
+AR Path="/5FB0A4D9/5FB212DA" Ref="C44"  Part="1" 
+F 0 "C44" H 9100 4250 50  0000 L CNN
+F 1 "0.1uF" H 9100 4050 50  0000 L CNN
+F 2 "" H 9138 4000 50  0001 C CNN
+F 3 "~" H 9100 4150 50  0001 C CNN
+	1    9100 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8700 4300 8700 4450
+Wire Wire Line
+	8700 4450 8900 4450
+Wire Wire Line
+	9100 4450 9100 4300
+$Comp
+L power:GND #PWR?
+U 1 1 5FB2565C
+P 8900 4550
+AR Path="/5F395E67/5FB2565C" Ref="#PWR?"  Part="1" 
+AR Path="/5FB0A4D9/5FB2565C" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 8900 4300 50  0001 C CNN
+F 1 "GND" H 8905 4377 50  0000 C CNN
+F 2 "" H 8900 4550 50  0001 C CNN
+F 3 "" H 8900 4550 50  0001 C CNN
+	1    8900 4550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8900 4550 8900 4450
+Connection ~ 8900 4450
+Wire Wire Line
+	8900 4450 9100 4450
+Wire Wire Line
+	8700 4000 8700 3800
+Connection ~ 8700 3800
+Wire Wire Line
+	8700 3800 9100 3800
+Wire Wire Line
+	9100 4000 9100 3800
+Connection ~ 9100 3800
+Wire Wire Line
+	9100 3800 9550 3800
+$Comp
+L Device:C C?
+U 1 1 5FB30433
+P 8500 2400
+AR Path="/5F395E67/5FB30433" Ref="C?"  Part="1" 
+AR Path="/5FB0A4D9/5FB30433" Ref="C?"  Part="1" 
+F 0 "C?" H 8500 2500 50  0000 L CNN
+F 1 "4.7uF" H 8500 2300 50  0000 L CNN
+F 2 "" H 8538 2250 50  0001 C CNN
+F 3 "~" H 8500 2400 50  0001 C CNN
+	1    8500 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5FB3043D
+P 8900 2400
+AR Path="/5F395E67/5FB3043D" Ref="C?"  Part="1" 
+AR Path="/5FB0A4D9/5FB3043D" Ref="C?"  Part="1" 
+F 0 "C?" H 8900 2500 50  0000 L CNN
+F 1 "0.1uF" H 8900 2300 50  0000 L CNN
+F 2 "" H 8938 2250 50  0001 C CNN
+F 3 "~" H 8900 2400 50  0001 C CNN
+	1    8900 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8500 2550 8500 2700
+Wire Wire Line
+	8500 2700 8700 2700
+Wire Wire Line
+	8900 2700 8900 2550
+$Comp
+L power:GND #PWR?
+U 1 1 5FB3044A
+P 8700 2800
+AR Path="/5F395E67/5FB3044A" Ref="#PWR?"  Part="1" 
+AR Path="/5FB0A4D9/5FB3044A" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 8700 2550 50  0001 C CNN
+F 1 "GND" H 8705 2627 50  0000 C CNN
+F 2 "" H 8700 2800 50  0001 C CNN
+F 3 "" H 8700 2800 50  0001 C CNN
+	1    8700 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8700 2800 8700 2700
+Connection ~ 8700 2700
+Wire Wire Line
+	8700 2700 8900 2700
+Wire Wire Line
+	8500 2250 8500 2050
+Wire Wire Line
+	8900 2250 8900 2050
+Wire Wire Line
+	6950 2050 8500 2050
+Connection ~ 8500 2050
+Wire Wire Line
+	8500 2050 8900 2050
+Connection ~ 8900 2050
+Wire Wire Line
+	8900 2050 9250 2050
+$Comp
+L pspice:INDUCTOR L?
+U 1 1 5FB6E3C5
+P 9500 2050
+AR Path="/5F549DCF/5FB6E3C5" Ref="L?"  Part="1" 
+AR Path="/5FB0A4D9/5FB6E3C5" Ref="L6"  Part="1" 
+F 0 "L6" H 9500 2200 50  0000 C CNN
+F 1 "MLZ1608M100L" H 9500 2000 50  0000 C CNN
+F 2 "" H 9500 2050 50  0001 C CNN
+F 3 "~" H 9500 2050 50  0001 C CNN
+	1    9500 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9750 2050 10000 2050
+Wire Wire Line
+	10200 2050 10350 2050
+Text GLabel 10350 2050 2    50   Input ~ 0
+VDDCORE
+$Comp
+L Device:R_Small R17
+U 1 1 5FB72AC9
+P 10100 2050
+F 0 "R17" V 9904 2050 50  0000 C CNN
+F 1 "2.2R" V 9995 2050 50  0000 C CNN
+F 2 "" H 10100 2050 50  0001 C CNN
+F 3 "~" H 10100 2050 50  0001 C CNN
+	1    10100 2050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4100 3650 4100 3750
+Connection ~ 4100 3650
+Connection ~ 4100 3750
 $EndSCHEMATC
