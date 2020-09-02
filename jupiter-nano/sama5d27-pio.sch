@@ -259,4 +259,8 @@ Text GLabel 9200 2900 2    50   Input ~ 0
 JTAG_TDI_PD15
 Text GLabel 9200 2800 2    50   Input ~ 0
 JTAG_TCK_PD14
+Text GLabel 2250 5600 2    50   Input ~ 0
+SDMMC_CARD_DET
+Wire Wire Line
+	2000 5600 2250 5600
 $EndSCHEMATC

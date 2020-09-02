@@ -455,8 +455,6 @@ Wire Wire Line
 Connection ~ 8500 2450
 Wire Wire Line
 	8500 2450 9550 2450
-Text Notes 6750 2650 0    79   ~ 0
-TODO: card detect
 $Comp
 L starcat:CGND #PWR?
 U 1 1 6019D543
@@ -523,4 +521,47 @@ Wire Wire Line
 Connection ~ 3100 2300
 Wire Wire Line
 	3100 2300 3100 2350
+Text Notes 1150 3850 0    79   ~ 0
+Native USB Host
+Text Notes 4200 3850 0    79   ~ 0
+Native USB Device
+Text Notes 7000 3800 0    79   ~ 0
+Native HSIC
+Wire Wire Line
+	6650 2650 6900 2650
+Wire Wire Line
+	6900 2650 6900 2900
+$Comp
+L Device:R_Small R120
+U 1 1 601FABB8
+P 6900 3000
+F 0 "R120" H 6841 2954 50  0000 R CNN
+F 1 "10K" H 6841 3045 50  0000 R CNN
+F 2 "" H 6900 3000 50  0001 C CNN
+F 3 "~" H 6900 3000 50  0001 C CNN
+	1    6900 3000
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6900 3100 6900 3200
+$Comp
+L power:GND #PWR?
+U 1 1 602008BF
+P 6900 3200
+F 0 "#PWR?" H 6900 2950 50  0001 C CNN
+F 1 "GND" H 6905 3027 50  0000 C CNN
+F 2 "" H 6900 3200 50  0001 C CNN
+F 3 "" H 6900 3200 50  0001 C CNN
+	1    6900 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6900 2650 9550 2650
+Connection ~ 6900 2650
+Text GLabel 9550 2650 2    50   Input ~ 0
+SDMMC1_CARD_DET
+Wire Wire Line
+	6650 2550 9550 2550
+Text GLabel 9550 2550 2    50   Input ~ 0
+VDD_3V3
 $EndSCHEMATC
