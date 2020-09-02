@@ -15,32 +15,6 @@ Comment4 ""
 $EndDescr
 Text Notes 4600 2000 0    79   ~ 16
 Header Pins
-$Comp
-L Connector_Generic:Conn_01x20 J?
-U 1 1 6013FEF5
-P 4700 3400
-AR Path="/5F395F18/6013FEF5" Ref="J?"  Part="1" 
-AR Path="/5F44311A/6013FEF5" Ref="J1"  Part="1" 
-F 0 "J1" H 4650 4600 50  0000 L CNN
-F 1 "Conn_01x20" H 4450 4500 50  0000 L CNN
-F 2 "" H 4700 3400 50  0001 C CNN
-F 3 "~" H 4700 3400 50  0001 C CNN
-	1    4700 3400
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x20 J?
-U 1 1 6013FEFB
-P 6200 3400
-AR Path="/5F395F18/6013FEFB" Ref="J?"  Part="1" 
-AR Path="/5F44311A/6013FEFB" Ref="J2"  Part="1" 
-F 0 "J2" H 6150 4550 50  0000 C CNN
-F 1 "Conn_01x20" H 6150 4450 50  0000 C CNN
-F 2 "" H 6200 3400 50  0001 C CNN
-F 3 "~" H 6200 3400 50  0001 C CNN
-	1    6200 3400
-	-1   0    0    -1  
-$EndComp
 Wire Wire Line
 	6400 2500 6800 2500
 Wire Wire Line
@@ -119,8 +93,6 @@ Wire Wire Line
 	4500 4200 4100 4200
 Wire Wire Line
 	4500 4300 4100 4300
-Wire Wire Line
-	4500 4400 4100 4400
 Text GLabel 4100 2500 0    50   Input ~ 0
 RESET
 Text GLabel 4100 2600 0    50   Input ~ 0
@@ -153,12 +125,12 @@ AD0
 $Comp
 L power:GND #PWR?
 U 1 1 6015F892
-P 4100 4400
-F 0 "#PWR?" H 4100 4150 50  0001 C CNN
-F 1 "GND" V 4105 4272 50  0000 R CNN
-F 2 "" H 4100 4400 50  0001 C CNN
-F 3 "" H 4100 4400 50  0001 C CNN
-	1    4100 4400
+P 4100 5600
+F 0 "#PWR?" H 4100 5350 50  0001 C CNN
+F 1 "GND" V 4105 5472 50  0000 R CNN
+F 2 "" H 4100 5600 50  0001 C CNN
+F 3 "" H 4100 5600 50  0001 C CNN
+	1    4100 5600
 	0    1    1    0   
 $EndComp
 Text GLabel 4100 3500 0    50   Input ~ 0
@@ -219,4 +191,124 @@ Text GLabel 6800 4300 2    50   Input ~ 0
 NC
 Text GLabel 6800 4400 2    50   Input ~ 0
 NC
+Wire Wire Line
+	4500 5600 4100 5600
+Wire Wire Line
+	4500 4400 4100 4400
+Wire Wire Line
+	4500 4500 4100 4500
+Wire Wire Line
+	4500 4600 4100 4600
+Wire Wire Line
+	4500 4700 4100 4700
+Wire Wire Line
+	4500 4800 4100 4800
+Wire Wire Line
+	4500 4900 4100 4900
+Wire Wire Line
+	4500 5000 4100 5000
+Wire Wire Line
+	4500 5100 4100 5100
+Wire Wire Line
+	4500 5200 4100 5200
+Wire Wire Line
+	4500 5300 4100 5300
+Wire Wire Line
+	4500 5400 4100 5400
+Wire Wire Line
+	4500 5500 4100 5500
+Text GLabel 4100 4400 0    50   Input ~ 0
+NC
+Text GLabel 4100 4500 0    50   Input ~ 0
+NC
+Text GLabel 4100 4600 0    50   Input ~ 0
+NC
+Text GLabel 4100 4700 0    50   Input ~ 0
+NC
+Text GLabel 4100 4800 0    50   Input ~ 0
+NC
+Text GLabel 4100 4900 0    50   Input ~ 0
+NC
+Text GLabel 4100 5000 0    50   Input ~ 0
+NC
+Text GLabel 4100 5100 0    50   Input ~ 0
+NC
+Text GLabel 4100 5200 0    50   Input ~ 0
+NC
+Text GLabel 4100 5300 0    50   Input ~ 0
+NC
+Text GLabel 4100 5400 0    50   Input ~ 0
+NC
+Text GLabel 4100 5500 0    50   Input ~ 0
+NC
+Wire Wire Line
+	6400 4500 6800 4500
+Wire Wire Line
+	6400 4600 6800 4600
+Wire Wire Line
+	6400 4700 6800 4700
+Wire Wire Line
+	6400 4800 6800 4800
+Wire Wire Line
+	6400 4900 6800 4900
+Wire Wire Line
+	6400 5000 6800 5000
+Wire Wire Line
+	6400 5100 6800 5100
+Wire Wire Line
+	6400 5200 6800 5200
+Text GLabel 6800 4500 2    50   Input ~ 0
+NC
+Text GLabel 6800 4600 2    50   Input ~ 0
+NC
+Text GLabel 6800 4700 2    50   Input ~ 0
+NC
+Text GLabel 6800 4800 2    50   Input ~ 0
+NC
+Text GLabel 6800 5000 2    50   Input ~ 0
+NC
+Text GLabel 6800 4900 2    50   Input ~ 0
+NC
+Text GLabel 6800 5100 2    50   Input ~ 0
+NC
+Text GLabel 6800 5200 2    50   Input ~ 0
+NC
+Wire Wire Line
+	6400 5300 6800 5300
+Wire Wire Line
+	6400 5400 6800 5400
+Wire Wire Line
+	6400 5500 6800 5500
+Wire Wire Line
+	6400 5600 6800 5600
+Text GLabel 6800 5400 2    50   Input ~ 0
+NC
+Text GLabel 6800 5300 2    50   Input ~ 0
+NC
+Text GLabel 6800 5500 2    50   Input ~ 0
+NC
+Text GLabel 6800 5600 2    50   Input ~ 0
+NC
+$Comp
+L Connector_Generic:Conn_01x32 J1
+U 1 1 6025EA16
+P 4700 4000
+F 0 "J1" H 4650 5750 50  0000 L CNN
+F 1 "Conn_01x32" H 4500 5650 50  0000 L CNN
+F 2 "" H 4700 4000 50  0001 C CNN
+F 3 "~" H 4700 4000 50  0001 C CNN
+	1    4700 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x32 J2
+U 1 1 60262515
+P 6200 4000
+F 0 "J2" H 6118 5717 50  0000 C CNN
+F 1 "Conn_01x32" H 6118 5626 50  0000 C CNN
+F 2 "" H 6200 4000 50  0001 C CNN
+F 3 "~" H 6200 4000 50  0001 C CNN
+	1    6200 4000
+	-1   0    0    -1  
+$EndComp
 $EndSCHEMATC

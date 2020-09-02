@@ -46,7 +46,7 @@ $EndSheet
 $Sheet
 S 3200 2900 1727 1523
 U 5F4A5621
-F0 "SAMA5D27 Clock" 50
+F0 "SAMA5D27 Clock and Reset" 50
 F1 "sama5d27-clock.sch" 50
 $EndSheet
 $Sheet
