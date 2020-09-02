@@ -13,62 +13,7 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text Notes 900  900  0    79   ~ 16
-Mounting Holes
-$Comp
-L Connector_Generic:Conn_01x01 MH1
-U 1 1 600DDBE3
-P 1250 1150
-F 0 "MH1" H 1330 1192 50  0000 L CNN
-F 1 "Conn_01x01" H 1330 1101 50  0000 L CNN
-F 2 "" H 1250 1150 50  0001 C CNN
-F 3 "~" H 1250 1150 50  0001 C CNN
-	1    1250 1150
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x01 MH2
-U 1 1 600DE109
-P 1250 1500
-F 0 "MH2" H 1330 1542 50  0000 L CNN
-F 1 "Conn_01x01" H 1330 1451 50  0000 L CNN
-F 2 "" H 1250 1500 50  0001 C CNN
-F 3 "~" H 1250 1500 50  0001 C CNN
-	1    1250 1500
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole M3
-U 1 1 600DE96A
-P 1200 1950
-F 0 "M3" H 1300 1996 50  0000 L CNN
-F 1 "MountingHole" H 1300 1905 50  0000 L CNN
-F 2 "" H 1200 1950 50  0001 C CNN
-F 3 "~" H 1200 1950 50  0001 C CNN
-	1    1200 1950
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole MH4
-U 1 1 600DEB93
-P 1200 2350
-F 0 "MH4" H 1300 2396 50  0000 L CNN
-F 1 "MountingHole" H 1300 2305 50  0000 L CNN
-F 2 "" H 1200 2350 50  0001 C CNN
-F 3 "~" H 1200 2350 50  0001 C CNN
-	1    1200 2350
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1050 1150 800  1150
-Wire Wire Line
-	800  1150 800  1500
-Wire Wire Line
-	800  1500 1050 1500
-Wire Wire Line
-	800  1500 800  1600
-Connection ~ 800  1500
-Text Notes 3700 850  0    79   ~ 16
+Text Notes 2850 1300 0    79   ~ 16
 JTAG
 Text Notes 7450 800  0    79   ~ 16
 MicroSD
@@ -135,8 +80,6 @@ Wire Wire Line
 	1750 4450 2000 4450
 Wire Wire Line
 	1750 4550 2000 4550
-Wire Wire Line
-	1750 4250 2000 4250
 Wire Wire Line
 	1450 4850 1450 4950
 Wire Wire Line
@@ -225,8 +168,8 @@ F 3 "" H 1400 6500 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1400 6450 1400 6500
-Text GLabel 2000 4250 2    50   Input ~ 0
-VBUS
+Text GLabel 3150 4250 2    50   Input ~ 0
+VBUS_USBA_5V_PA27
 Text GLabel 5000 4250 2    50   Input ~ 0
 VBUS
 Text GLabel 1900 5850 2    50   Input ~ 0
@@ -455,72 +398,61 @@ Wire Wire Line
 Connection ~ 8500 2450
 Wire Wire Line
 	8500 2450 9550 2450
-$Comp
-L starcat:CGND #PWR?
-U 1 1 6019D543
-P 800 1700
-F 0 "#PWR?" H 800 1800 79  0001 C CNN
-F 1 "CGND" H 775 1520 59  0000 C CNN
-F 2 "" H 800 1800 79  0001 C CNN
-F 3 "" H 800 1800 79  0001 C CNN
-	1    800  1700
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	3600 1350 3800 1350
+	2750 1800 2950 1800
 Wire Wire Line
-	3600 1550 3800 1550
+	2750 2000 2950 2000
 Wire Wire Line
-	3600 1650 3800 1650
+	2750 2100 2950 2100
 Wire Wire Line
-	3600 1750 3800 1750
+	2750 2200 2950 2200
 Wire Wire Line
-	3600 1850 3800 1850
+	2750 2300 2950 2300
 Wire Wire Line
-	3100 2250 3100 2300
+	2250 2700 2250 2750
 $Comp
 L power:GND #PWR?
 U 1 1 601B02C7
-P 3100 2350
-F 0 "#PWR?" H 3100 2100 50  0001 C CNN
-F 1 "GND" H 3105 2177 50  0000 C CNN
-F 2 "" H 3100 2350 50  0001 C CNN
-F 3 "" H 3100 2350 50  0001 C CNN
-	1    3100 2350
+P 2250 2800
+F 0 "#PWR?" H 2250 2550 50  0001 C CNN
+F 1 "GND" H 2255 2627 50  0000 C CNN
+F 2 "" H 2250 2800 50  0001 C CNN
+F 3 "" H 2250 2800 50  0001 C CNN
+	1    2250 2800
 	1    0    0    -1  
 $EndComp
-Text GLabel 3800 1350 2    50   Input ~ 0
+Text GLabel 2950 1800 2    50   Input ~ 0
 NRST
-Text GLabel 3800 1550 2    50   Input ~ 0
+Text GLabel 2950 2000 2    50   Input ~ 0
 JTAG_TCK_PD14
-Text GLabel 3800 1650 2    50   Input ~ 0
+Text GLabel 2950 2100 2    50   Input ~ 0
 JTAG_TMS_PD17
-Text GLabel 3800 1750 2    50   Input ~ 0
+Text GLabel 2950 2200 2    50   Input ~ 0
 JTAG_TDO_PD16
-Text GLabel 3800 1850 2    50   Input ~ 0
+Text GLabel 2950 2300 2    50   Input ~ 0
 JTAG_TDI_PD15
 $Comp
 L Connector:Conn_ARM_JTAG_SWD_10 J9
 U 1 1 601B413A
-P 3100 1650
-F 0 "J9" H 2657 1696 50  0000 R CNN
-F 1 "Conn_ARM_JTAG_SWD_10" H 2657 1605 50  0000 R CNN
-F 2 "" H 3100 1650 50  0001 C CNN
-F 3 "http://infocenter.arm.com/help/topic/com.arm.doc.ddi0314h/DDI0314H_coresight_components_trm.pdf" V 2750 400 50  0001 C CNN
-	1    3100 1650
+P 2250 2100
+F 0 "J9" H 1807 2146 50  0000 R CNN
+F 1 "Conn_ARM_JTAG_SWD_10" H 1807 2055 50  0000 R CNN
+F 2 "" H 2250 2100 50  0001 C CNN
+F 3 "http://infocenter.arm.com/help/topic/com.arm.doc.ddi0314h/DDI0314H_coresight_components_trm.pdf" V 1900 850 50  0001 C CNN
+	1    2250 2100
 	1    0    0    -1  
 $EndComp
-Text GLabel 3100 950  1    50   Input ~ 0
+Text GLabel 2250 1400 1    50   Input ~ 0
 VDD_3V3
 Wire Wire Line
-	3100 1050 3100 950 
+	2250 1500 2250 1400
 Wire Wire Line
-	3000 2250 3000 2300
+	2150 2700 2150 2750
 Wire Wire Line
-	3000 2300 3100 2300
-Connection ~ 3100 2300
+	2150 2750 2250 2750
+Connection ~ 2250 2750
 Wire Wire Line
-	3100 2300 3100 2350
+	2250 2750 2250 2800
 Text Notes 1150 3850 0    79   ~ 0
 Native USB Host
 Text Notes 4200 3850 0    79   ~ 0
@@ -564,4 +496,86 @@ Wire Wire Line
 	6650 2550 9550 2550
 Text GLabel 9550 2550 2    50   Input ~ 0
 VDD_3V3
+Text GLabel 3150 3950 2    50   Input ~ 0
+VBUS
+$Comp
+L Device:R_Small R131
+U 1 1 60356F20
+P 3050 4500
+F 0 "R131" H 2991 4454 50  0000 R CNN
+F 1 "100K" H 2991 4545 50  0000 R CNN
+F 2 "" H 3050 4500 50  0001 C CNN
+F 3 "~" H 3050 4500 50  0001 C CNN
+	1    3050 4500
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_Small R130
+U 1 1 60357730
+P 2850 4250
+F 0 "R130" V 3046 4250 50  0000 C CNN
+F 1 "100K" V 2955 4250 50  0000 C CNN
+F 2 "" H 2850 4250 50  0001 C CNN
+F 3 "~" H 2850 4250 50  0001 C CNN
+	1    2850 4250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C C130
+U 1 1 60357A00
+P 2600 4500
+F 0 "C130" H 2715 4546 50  0000 L CNN
+F 1 "20pF" H 2715 4455 50  0000 L CNN
+F 2 "" H 2638 4350 50  0001 C CNN
+F 3 "~" H 2600 4500 50  0001 C CNN
+	1    2600 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1750 4250 1950 4250
+Wire Wire Line
+	2600 4350 2600 4250
+Connection ~ 2600 4250
+Wire Wire Line
+	2600 4250 2750 4250
+Wire Wire Line
+	2950 4250 3050 4250
+Wire Wire Line
+	3050 4400 3050 4250
+Connection ~ 3050 4250
+Wire Wire Line
+	3050 4250 3150 4250
+Wire Wire Line
+	2600 4650 2600 4750
+$Comp
+L power:GND #PWR?
+U 1 1 60363D58
+P 2600 4750
+F 0 "#PWR?" H 2600 4500 50  0001 C CNN
+F 1 "GND" H 2605 4577 50  0000 C CNN
+F 2 "" H 2600 4750 50  0001 C CNN
+F 3 "" H 2600 4750 50  0001 C CNN
+	1    2600 4750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3050 4600 3050 4750
+$Comp
+L power:GND #PWR?
+U 1 1 60366200
+P 3050 4750
+F 0 "#PWR?" H 3050 4500 50  0001 C CNN
+F 1 "GND" H 3055 4577 50  0000 C CNN
+F 2 "" H 3050 4750 50  0001 C CNN
+F 3 "" H 3050 4750 50  0001 C CNN
+	1    3050 4750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3150 3950 1950 3950
+Wire Wire Line
+	1950 3950 1950 4250
+Connection ~ 1950 4250
+Wire Wire Line
+	1950 4250 2600 4250
 $EndSCHEMATC

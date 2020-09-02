@@ -263,4 +263,8 @@ Text GLabel 2250 5600 2    50   Input ~ 0
 SDMMC_CARD_DET
 Wire Wire Line
 	2000 5600 2250 5600
+Wire Wire Line
+	2000 5300 2250 5300
+Text GLabel 2250 5300 2    50   Input ~ 0
+VBUS_USBA_5V_PA27
 $EndSCHEMATC
