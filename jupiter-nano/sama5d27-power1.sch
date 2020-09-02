@@ -341,12 +341,9 @@ Wire Wire Line
 Wire Wire Line
 	8150 2050 8800 2050
 Wire Wire Line
-	8800 1950 8550 1950
+	8800 1950 8300 1950
 Wire Wire Line
 	8800 1850 8550 1850
-Connection ~ 8550 1850
-Wire Wire Line
-	8550 1850 8550 1950
 $Comp
 L Device:C C27
 U 1 1 5FEA36E3
@@ -1481,4 +1478,26 @@ Wire Wire Line
 Connection ~ 8550 4350
 Wire Wire Line
 	8550 4350 8550 4450
+Text GLabel 8150 1950 0    50   Input ~ 0
+ADVREF
+Wire Wire Line
+	8300 1950 8300 700 
+Wire Wire Line
+	8300 700  8150 700 
+Connection ~ 8300 1950
+Wire Wire Line
+	8300 1950 8150 1950
+$Comp
+L Device:Net-Tie_2 NT2
+U 1 1 60133280
+P 8050 700
+F 0 "NT2" H 8050 881 50  0000 C CNN
+F 1 "Net-Tie_2" H 8050 790 50  0000 C CNN
+F 2 "" H 8050 700 50  0001 C CNN
+F 3 "~" H 8050 700 50  0001 C CNN
+	1    8050 700 
+	1    0    0    -1  
+$EndComp
+Text GLabel 7950 700  0    50   Input ~ 0
+VDD_3V3
 $EndSCHEMATC

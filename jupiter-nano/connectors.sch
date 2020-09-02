@@ -13,4 +13,516 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
+Text Notes 900  900  0    79   ~ 16
+Mounting Holes
+$Comp
+L Connector_Generic:Conn_01x01 MH1
+U 1 1 600DDBE3
+P 1250 1150
+F 0 "MH1" H 1330 1192 50  0000 L CNN
+F 1 "Conn_01x01" H 1330 1101 50  0000 L CNN
+F 2 "" H 1250 1150 50  0001 C CNN
+F 3 "~" H 1250 1150 50  0001 C CNN
+	1    1250 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 MH2
+U 1 1 600DE109
+P 1250 1500
+F 0 "MH2" H 1330 1542 50  0000 L CNN
+F 1 "Conn_01x01" H 1330 1451 50  0000 L CNN
+F 2 "" H 1250 1500 50  0001 C CNN
+F 3 "~" H 1250 1500 50  0001 C CNN
+	1    1250 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole M3
+U 1 1 600DE96A
+P 1200 1950
+F 0 "M3" H 1300 1996 50  0000 L CNN
+F 1 "MountingHole" H 1300 1905 50  0000 L CNN
+F 2 "" H 1200 1950 50  0001 C CNN
+F 3 "~" H 1200 1950 50  0001 C CNN
+	1    1200 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole MH4
+U 1 1 600DEB93
+P 1200 2350
+F 0 "MH4" H 1300 2396 50  0000 L CNN
+F 1 "MountingHole" H 1300 2305 50  0000 L CNN
+F 2 "" H 1200 2350 50  0001 C CNN
+F 3 "~" H 1200 2350 50  0001 C CNN
+	1    1200 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1050 1150 800  1150
+Wire Wire Line
+	800  1150 800  1500
+Wire Wire Line
+	800  1500 1050 1500
+Wire Wire Line
+	800  1500 800  1600
+Connection ~ 800  1500
+Text Notes 3700 850  0    79   ~ 16
+JTAG
+Text Notes 7450 800  0    79   ~ 16
+MicroSD
+$Comp
+L Connector:Micro_SD_Card_Det_Hirose_DM3AT J5
+U 1 1 600E473D
+P 5750 2150
+F 0 "J5" H 5700 2967 50  0000 C CNN
+F 1 "Micro_SD_Card_Det_Hirose_DM3AT" H 5700 2876 50  0000 C CNN
+F 2 "" H 7800 2850 50  0001 C CNN
+F 3 "https://www.hirose.com/product/en/download_file/key_name/DM3/category/Catalog/doc_file_id/49662/?file_category_id=4&item_id=195&is_series=1" H 5750 2250 50  0001 C CNN
+	1    5750 2150
+	-1   0    0    -1  
+$EndComp
+Text Notes 4450 3550 0    79   ~ 16
+USB
+$Comp
+L Connector:USB_B_Micro J5
+U 1 1 600E6D3B
+P 1450 4450
+F 0 "J5" H 1507 4917 50  0000 C CNN
+F 1 "USB_B_Micro" H 1507 4826 50  0000 C CNN
+F 2 "" H 1600 4400 50  0001 C CNN
+F 3 "~" H 1600 4400 50  0001 C CNN
+	1    1450 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:USB_B_Micro J8
+U 1 1 600E8513
+P 1400 6050
+F 0 "J8" H 1457 6517 50  0000 C CNN
+F 1 "USB_B_Micro" H 1457 6426 50  0000 C CNN
+F 2 "" H 1550 6000 50  0001 C CNN
+F 3 "~" H 1550 6000 50  0001 C CNN
+	1    1400 6050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J6
+U 1 1 600E9FCD
+P 7150 4350
+F 0 "J6" H 7068 4025 50  0000 C CNN
+F 1 "Conn_01x02" H 7068 4116 50  0000 C CNN
+F 2 "" H 7150 4350 50  0001 C CNN
+F 3 "~" H 7150 4350 50  0001 C CNN
+	1    7150 4350
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:USB_B_Micro J7
+U 1 1 600EA8E8
+P 4550 4450
+F 0 "J7" H 4607 4917 50  0000 C CNN
+F 1 "USB_B_Micro" H 4607 4826 50  0000 C CNN
+F 2 "" H 4700 4400 50  0001 C CNN
+F 3 "~" H 4700 4400 50  0001 C CNN
+	1    4550 4450
+	1    0    0    -1  
+$EndComp
+Text Notes 1050 5500 0    79   ~ 0
+USB-UART Bridge
+Wire Wire Line
+	1750 4450 2000 4450
+Wire Wire Line
+	1750 4550 2000 4550
+Wire Wire Line
+	1750 4250 2000 4250
+Wire Wire Line
+	1450 4850 1450 4950
+Wire Wire Line
+	1350 4850 1150 4850
+Wire Wire Line
+	1150 4850 1150 4950
+Wire Wire Line
+	4450 4850 4450 4900
+Wire Wire Line
+	4450 4900 4250 4900
+Wire Wire Line
+	4250 4900 4250 4950
+Wire Wire Line
+	4550 4850 4550 4950
+Wire Wire Line
+	1300 6450 1300 6550
+Wire Wire Line
+	1300 6550 1050 6550
+$Comp
+L starcat:CGND #PWR?
+U 1 1 6017108C
+P 1150 5050
+F 0 "#PWR?" H 1150 5150 79  0001 C CNN
+F 1 "CGND" H 1125 4870 59  0000 C CNN
+F 2 "" H 1150 5150 79  0001 C CNN
+F 3 "" H 1150 5150 79  0001 C CNN
+	1    1150 5050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1050 6550 1050 6650
+$Comp
+L starcat:CGND #PWR?
+U 1 1 601723D2
+P 1050 6750
+F 0 "#PWR?" H 1050 6850 79  0001 C CNN
+F 1 "CGND" H 1025 6570 59  0000 C CNN
+F 2 "" H 1050 6850 79  0001 C CNN
+F 3 "" H 1050 6850 79  0001 C CNN
+	1    1050 6750
+	1    0    0    -1  
+$EndComp
+$Comp
+L starcat:CGND #PWR?
+U 1 1 60172BEE
+P 4250 5050
+F 0 "#PWR?" H 4250 5150 79  0001 C CNN
+F 1 "CGND" H 4225 4870 59  0000 C CNN
+F 2 "" H 4250 5150 79  0001 C CNN
+F 3 "" H 4250 5150 79  0001 C CNN
+	1    4250 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 601640C7
+P 1450 4950
+F 0 "#PWR?" H 1450 4700 50  0001 C CNN
+F 1 "GND" H 1455 4777 50  0000 C CNN
+F 2 "" H 1450 4950 50  0001 C CNN
+F 3 "" H 1450 4950 50  0001 C CNN
+	1    1450 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60173A22
+P 4550 4950
+F 0 "#PWR?" H 4550 4700 50  0001 C CNN
+F 1 "GND" H 4555 4777 50  0000 C CNN
+F 2 "" H 4550 4950 50  0001 C CNN
+F 3 "" H 4550 4950 50  0001 C CNN
+	1    4550 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60173EF0
+P 1400 6500
+F 0 "#PWR?" H 1400 6250 50  0001 C CNN
+F 1 "GND" H 1405 6327 50  0000 C CNN
+F 2 "" H 1400 6500 50  0001 C CNN
+F 3 "" H 1400 6500 50  0001 C CNN
+	1    1400 6500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1400 6450 1400 6500
+Text GLabel 2000 4250 2    50   Input ~ 0
+VBUS
+Text GLabel 5000 4250 2    50   Input ~ 0
+VBUS
+Text GLabel 1900 5850 2    50   Input ~ 0
+VBUS
+Wire Wire Line
+	1700 5850 1900 5850
+Wire Wire Line
+	4850 4250 5000 4250
+Text GLabel 2000 4450 2    50   Input ~ 0
+USBA_P
+Text GLabel 2000 4550 2    50   Input ~ 0
+USBA_M
+Text GLabel 1900 6050 2    50   Input ~ 0
+USBU_P
+Text GLabel 1900 6150 2    50   Input ~ 0
+USBU_M
+Wire Wire Line
+	1700 6050 1900 6050
+Wire Wire Line
+	1700 6150 1900 6150
+Text GLabel 5000 4450 2    50   Input ~ 0
+USBB_P
+Text GLabel 5000 4550 2    50   Input ~ 0
+USBB_M
+Wire Wire Line
+	4850 4450 5000 4450
+Wire Wire Line
+	4850 4550 5000 4550
+Wire Wire Line
+	7350 4250 7650 4250
+Wire Wire Line
+	7350 4350 7650 4350
+Text GLabel 7650 4250 2    50   Input ~ 0
+HSIC_DATA
+Text GLabel 7650 4350 2    50   Input ~ 0
+HSIC_STROBE
+$Comp
+L Device:R_Small R32
+U 1 1 6017B558
+P 7700 1450
+F 0 "R32" H 7641 1404 50  0000 R CNN
+F 1 "68K" H 7641 1495 50  0000 R CNN
+F 2 "" H 7700 1450 50  0001 C CNN
+F 3 "~" H 7700 1450 50  0001 C CNN
+	1    7700 1450
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_Small R33
+U 1 1 6017BFC1
+P 8100 1450
+F 0 "R33" H 8041 1404 50  0000 R CNN
+F 1 "68K" H 8041 1495 50  0000 R CNN
+F 2 "" H 8100 1450 50  0001 C CNN
+F 3 "~" H 8100 1450 50  0001 C CNN
+	1    8100 1450
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_Small R34
+U 1 1 6017C507
+P 8500 1450
+F 0 "R34" H 8441 1404 50  0000 R CNN
+F 1 "68K" H 8441 1495 50  0000 R CNN
+F 2 "" H 8500 1450 50  0001 C CNN
+F 3 "~" H 8500 1450 50  0001 C CNN
+	1    8500 1450
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_Small R31
+U 1 1 6017C8A9
+P 7300 1450
+F 0 "R31" H 7241 1404 50  0000 R CNN
+F 1 "68k" H 7241 1495 50  0000 R CNN
+F 2 "" H 7300 1450 50  0001 C CNN
+F 3 "~" H 7300 1450 50  0001 C CNN
+	1    7300 1450
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_Small R30
+U 1 1 6017D0AA
+P 6900 1450
+F 0 "R30" H 6841 1404 50  0000 R CNN
+F 1 "10K" H 6841 1495 50  0000 R CNN
+F 2 "" H 6900 1450 50  0001 C CNN
+F 3 "~" H 6900 1450 50  0001 C CNN
+	1    6900 1450
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C28
+U 1 1 6017DF7F
+P 9200 1350
+F 0 "C28" H 9315 1396 50  0000 L CNN
+F 1 "10uF" H 9315 1305 50  0000 L CNN
+F 2 "" H 9238 1200 50  0001 C CNN
+F 3 "~" H 9200 1350 50  0001 C CNN
+	1    9200 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L starcat:CGND #PWR?
+U 1 1 6017E528
+P 4400 3000
+F 0 "#PWR?" H 4400 3100 79  0001 C CNN
+F 1 "CGND" H 4375 2820 59  0000 C CNN
+F 2 "" H 4400 3100 79  0001 C CNN
+F 3 "" H 4400 3100 79  0001 C CNN
+	1    4400 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4950 2650 4400 2650
+Wire Wire Line
+	4400 2650 4400 2900
+Wire Wire Line
+	6650 2250 6950 2250
+$Comp
+L power:GND #PWR?
+U 1 1 60183FAE
+P 6950 2250
+F 0 "#PWR?" H 6950 2000 50  0001 C CNN
+F 1 "GND" V 6955 2122 50  0000 R CNN
+F 2 "" H 6950 2250 50  0001 C CNN
+F 3 "" H 6950 2250 50  0001 C CNN
+	1    6950 2250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6650 1750 7300 1750
+Wire Wire Line
+	6650 1850 7700 1850
+Wire Wire Line
+	6650 1950 6900 1950
+Wire Wire Line
+	6650 2150 9550 2150
+Wire Wire Line
+	6650 2350 8100 2350
+Wire Wire Line
+	6650 2450 8500 2450
+Text GLabel 9550 1750 2    50   Input ~ 0
+SDMMC1_DAT2
+Text GLabel 9550 1850 2    50   Input ~ 0
+SDMMC1_DAT3
+Text GLabel 9550 1950 2    50   Input ~ 0
+SDMMC1_CMD
+Text GLabel 9550 2050 2    50   Input ~ 0
+VDD_3V3
+Text GLabel 9550 2150 2    50   Input ~ 0
+SDMMC1_CK
+Text GLabel 9550 2350 2    50   Input ~ 0
+SDMMC1_DAT0
+Text GLabel 9550 2450 2    50   Input ~ 0
+SDMMC1_DAT1
+Wire Wire Line
+	9200 1500 9200 2050
+Wire Wire Line
+	6650 2050 9200 2050
+Connection ~ 9200 2050
+Wire Wire Line
+	9200 2050 9550 2050
+$Comp
+L power:GND #PWR?
+U 1 1 601899BC
+P 9200 1100
+F 0 "#PWR?" H 9200 850 50  0001 C CNN
+F 1 "GND" H 9205 927 50  0000 C CNN
+F 2 "" H 9200 1100 50  0001 C CNN
+F 3 "" H 9200 1100 50  0001 C CNN
+	1    9200 1100
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	9200 1200 9200 1100
+Wire Wire Line
+	6900 1350 6900 1200
+Wire Wire Line
+	8500 1200 8500 1350
+Wire Wire Line
+	8100 1350 8100 1200
+Wire Wire Line
+	6900 1200 7300 1200
+Connection ~ 8100 1200
+Wire Wire Line
+	8100 1200 8500 1200
+Wire Wire Line
+	7700 1350 7700 1200
+Connection ~ 7700 1200
+Wire Wire Line
+	7700 1200 8100 1200
+Wire Wire Line
+	7300 1350 7300 1200
+Connection ~ 7300 1200
+Wire Wire Line
+	7300 1200 7700 1200
+Wire Wire Line
+	7700 1200 7700 950 
+Wire Wire Line
+	7700 950  8100 950 
+Text GLabel 8100 950  2    50   Input ~ 0
+VDD_3V3
+Wire Wire Line
+	6900 1550 6900 1950
+Connection ~ 6900 1950
+Wire Wire Line
+	6900 1950 9550 1950
+Wire Wire Line
+	7300 1550 7300 1750
+Connection ~ 7300 1750
+Wire Wire Line
+	7300 1750 9550 1750
+Wire Wire Line
+	7700 1550 7700 1850
+Connection ~ 7700 1850
+Wire Wire Line
+	7700 1850 9550 1850
+Wire Wire Line
+	8100 1550 8100 2350
+Connection ~ 8100 2350
+Wire Wire Line
+	8100 2350 9550 2350
+Wire Wire Line
+	8500 1550 8500 2450
+Connection ~ 8500 2450
+Wire Wire Line
+	8500 2450 9550 2450
+Text Notes 6750 2650 0    79   ~ 0
+TODO: card detect
+Text Notes 3700 2200 0    79   ~ 0
+TODO: JTAG
+$Comp
+L starcat:CGND #PWR?
+U 1 1 6019D543
+P 800 1700
+F 0 "#PWR?" H 800 1800 79  0001 C CNN
+F 1 "CGND" H 775 1520 59  0000 C CNN
+F 2 "" H 800 1800 79  0001 C CNN
+F 3 "" H 800 1800 79  0001 C CNN
+	1    800  1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3600 1350 3800 1350
+Wire Wire Line
+	3600 1550 3800 1550
+Wire Wire Line
+	3600 1650 3800 1650
+Wire Wire Line
+	3600 1750 3800 1750
+Wire Wire Line
+	3600 1850 3800 1850
+Wire Wire Line
+	3100 2250 3100 2300
+$Comp
+L power:GND #PWR?
+U 1 1 601B02C7
+P 3100 2350
+F 0 "#PWR?" H 3100 2100 50  0001 C CNN
+F 1 "GND" H 3105 2177 50  0000 C CNN
+F 2 "" H 3100 2350 50  0001 C CNN
+F 3 "" H 3100 2350 50  0001 C CNN
+	1    3100 2350
+	1    0    0    -1  
+$EndComp
+Text GLabel 3800 1350 2    50   Input ~ 0
+NRST
+Text GLabel 3800 1550 2    50   Input ~ 0
+JTAG_TCK_PD14
+Text GLabel 3800 1650 2    50   Input ~ 0
+JTAG_TMS_PD17
+Text GLabel 3800 1750 2    50   Input ~ 0
+JTAG_TDO_PD16
+Text GLabel 3800 1850 2    50   Input ~ 0
+JTAG_TDI_PD15
+$Comp
+L Connector:Conn_ARM_JTAG_SWD_10 J9
+U 1 1 601B413A
+P 3100 1650
+F 0 "J9" H 2657 1696 50  0000 R CNN
+F 1 "Conn_ARM_JTAG_SWD_10" H 2657 1605 50  0000 R CNN
+F 2 "" H 3100 1650 50  0001 C CNN
+F 3 "http://infocenter.arm.com/help/topic/com.arm.doc.ddi0314h/DDI0314H_coresight_components_trm.pdf" V 2750 400 50  0001 C CNN
+	1    3100 1650
+	1    0    0    -1  
+$EndComp
+Text GLabel 3100 950  1    50   Input ~ 0
+VDD_3V3
+Wire Wire Line
+	3100 1050 3100 950 
+Wire Wire Line
+	3000 2250 3000 2300
+Wire Wire Line
+	3000 2300 3100 2300
+Connection ~ 3100 2300
+Wire Wire Line
+	3100 2300 3100 2350
 $EndSCHEMATC
