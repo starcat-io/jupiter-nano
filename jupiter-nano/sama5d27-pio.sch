@@ -201,7 +201,7 @@ Wire Wire Line
 Text GLabel 9200 2700 2    50   Input ~ 0
 FLEXCOM4_IO1
 Text GLabel 9200 3100 2    50   Input ~ 0
-TMS
+JTAG_TMS_PD17
 Text GLabel 9200 3300 2    50   Input ~ 0
 AD0
 Text GLabel 9200 3400 2    50   Input ~ 0
@@ -247,4 +247,16 @@ F 3 "" H 9100 850 50  0001 C CNN
 	1    9100 850 
 	-1   0    0    1   
 $EndComp
+Wire Wire Line
+	9050 2800 9200 2800
+Wire Wire Line
+	9050 3000 9200 3000
+Wire Wire Line
+	9050 2900 9200 2900
+Text GLabel 9200 3000 2    50   Input ~ 0
+JTAG_TDO_PD16
+Text GLabel 9200 2900 2    50   Input ~ 0
+JTAG_TDI_PD15
+Text GLabel 9200 2800 2    50   Input ~ 0
+JTAG_TCK_PD14
 $EndSCHEMATC

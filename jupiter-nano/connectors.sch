@@ -457,8 +457,6 @@ Wire Wire Line
 	8500 2450 9550 2450
 Text Notes 6750 2650 0    79   ~ 0
 TODO: card detect
-Text Notes 3700 2200 0    79   ~ 0
-TODO: JTAG
 $Comp
 L starcat:CGND #PWR?
 U 1 1 6019D543
