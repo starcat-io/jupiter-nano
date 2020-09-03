@@ -30,11 +30,7 @@ Wire Wire Line
 Wire Wire Line
 	6400 3100 6800 3100
 Wire Wire Line
-	6400 3200 6800 3200
-Wire Wire Line
 	6400 3300 6800 3300
-Wire Wire Line
-	6400 3400 6800 3400
 Wire Wire Line
 	6400 3500 6800 3500
 Wire Wire Line
@@ -76,12 +72,6 @@ Wire Wire Line
 Wire Wire Line
 	4500 3400 4100 3400
 Wire Wire Line
-	4500 3500 4100 3500
-Wire Wire Line
-	4500 3600 4100 3600
-Wire Wire Line
-	4500 3700 4100 3700
-Wire Wire Line
 	4500 3800 4100 3800
 Wire Wire Line
 	4500 3900 4100 3900
@@ -100,10 +90,10 @@ VDD_3V3
 Text GLabel 4100 2700 0    50   Input ~ 0
 ADVREF
 $Comp
-L power:GND #PWR0121
+L power:GND #PWR022
 U 1 1 6015EE8C
 P 4100 2800
-F 0 "#PWR0121" H 4100 2550 50  0001 C CNN
+F 0 "#PWR022" H 4100 2550 50  0001 C CNN
 F 1 "GND" V 4105 2672 50  0000 R CNN
 F 2 "" H 4100 2800 50  0001 C CNN
 F 3 "" H 4100 2800 50  0001 C CNN
@@ -123,10 +113,10 @@ AD3
 Text GLabel 4100 3400 0    50   Input ~ 0
 AD0
 $Comp
-L power:GND #PWR0122
+L power:GND #PWR023
 U 1 1 6015F892
 P 4100 5600
-F 0 "#PWR0122" H 4100 5350 50  0001 C CNN
+F 0 "#PWR023" H 4100 5350 50  0001 C CNN
 F 1 "GND" V 4105 5472 50  0000 R CNN
 F 2 "" H 4100 5600 50  0001 C CNN
 F 3 "" H 4100 5600 50  0001 C CNN
@@ -170,13 +160,13 @@ PWML1
 Text GLabel 6800 3300 2    50   Input ~ 0
 PWMH2
 Text GLabel 6800 3400 2    50   Input ~ 0
-PWMEXTRG-IRQ
+PWMEXTRG1-IRQ
 Text GLabel 6800 3500 2    50   Input ~ 0
 I2C_TWCK0
 Text GLabel 6800 3600 2    50   Input ~ 0
 I2C_TWD0
 Text GLabel 6800 3700 2    50   Input ~ 0
-NC
+PWML0
 Text GLabel 6800 3800 2    50   Input ~ 0
 NC
 Text GLabel 6800 3900 2    50   Input ~ 0
@@ -286,14 +276,14 @@ NC
 Text GLabel 6800 5300 2    50   Input ~ 0
 NC
 Text GLabel 6800 5500 2    50   Input ~ 0
-NC
+CLK_AUDIO
 Text GLabel 6800 5600 2    50   Input ~ 0
 NC
 $Comp
-L Connector_Generic:Conn_01x32 J1
+L Connector_Generic:Conn_01x32 J7
 U 1 1 6025EA16
 P 4700 4000
-F 0 "J1" H 4650 5750 50  0000 L CNN
+F 0 "J7" H 4650 5750 50  0000 L CNN
 F 1 "Conn_01x32" H 4500 5650 50  0000 L CNN
 F 2 "" H 4700 4000 50  0001 C CNN
 F 3 "~" H 4700 4000 50  0001 C CNN
@@ -301,14 +291,24 @@ F 3 "~" H 4700 4000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x32 J2
+L Connector_Generic:Conn_01x32 J8
 U 1 1 60262515
 P 6200 4000
-F 0 "J2" H 6118 5717 50  0000 C CNN
+F 0 "J8" H 6118 5717 50  0000 C CNN
 F 1 "Conn_01x32" H 6118 5626 50  0000 C CNN
 F 2 "" H 6200 4000 50  0001 C CNN
 F 3 "~" H 6200 4000 50  0001 C CNN
 	1    6200 4000
 	-1   0    0    -1  
 $EndComp
+Wire Wire Line
+	6400 3200 6800 3200
+Wire Wire Line
+	6400 3400 6800 3400
+Wire Wire Line
+	4100 3500 4500 3500
+Wire Wire Line
+	4100 3600 4500 3600
+Wire Wire Line
+	4100 3700 4500 3700
 $EndSCHEMATC

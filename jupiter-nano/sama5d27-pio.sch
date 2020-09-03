@@ -35,36 +35,32 @@ F 3 "" H 7250 1400 60  0000 C CNN
 	4    7250 1400
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2000 2150 2250 2150
 Text GLabel 2250 2150 2    50   Input ~ 0
 STATUS_LED
 Text GLabel 2250 3050 2    50   Input ~ 0
-PMIC_CHLEV_PA12
+PMIC_CHGLEV_PA12
 Text GLabel 2250 3500 2    50   Input ~ 0
-SPI_MOSI
+SPI0_MOSI
 Text GLabel 2250 3650 2    50   Input ~ 0
-SPI_MISO
+SPI0_MISO
 Text GLabel 2250 3950 2    50   Input ~ 0
-SDMMC_DAT0
-Text GLabel 2200 4100 2    50   Input ~ 0
-SDMMC_DAT1
-Text GLabel 2200 4250 2    50   Input ~ 0
-SDMMC_DAT2
+SDMMC1_DAT0
+Text GLabel 2250 4100 2    50   Input ~ 0
+SDMMC1_DAT1
+Text GLabel 2250 4250 2    50   Input ~ 0
+SDMMC1_DAT2
 Text GLabel 2250 4400 2    50   Input ~ 0
-SDMMC_DAT3
+SDMMC1_DAT3
 Text GLabel 2250 4550 2    50   Input ~ 0
-SDMMC_CK
+SDMMC1_CK
 Text GLabel 2250 5450 2    50   Input ~ 0
-SDMMC_CMD
+SDMMC1_CMD
 Text GLabel 2250 5750 2    50   Input ~ 0
-SDMMC_CD
+SDMMC1_CD
 Text GLabel 2250 5900 2    50   Input ~ 0
 PWML0
 Text GLabel 3900 1500 0    50   Input ~ 0
-PWML0
-Wire Wire Line
-	2000 3050 2250 3050
+PWML1
 Wire Wire Line
 	2000 3500 2250 3500
 Wire Wire Line
@@ -81,19 +77,15 @@ F 3 "" H 4150 1450 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2000 1250 2100 1250
-Wire Wire Line
-	2000 1400 2100 1400
-Wire Wire Line
 	4150 1400 3900 1400
 Wire Wire Line
 	3900 1500 4150 1500
 Wire Wire Line
 	2000 3950 2250 3950
 Wire Wire Line
-	2000 4100 2200 4100
+	2000 4100 2250 4100
 Wire Wire Line
-	2000 4250 2200 4250
+	2000 4250 2250 4250
 Wire Wire Line
 	2000 4400 2250 4400
 Wire Wire Line
@@ -107,7 +99,7 @@ Wire Wire Line
 Text GLabel 3900 1400 0    50   Input ~ 0
 PWMH1
 Text GLabel 3900 1700 0    50   Input ~ 0
-PWMEXTRAG1-IRQ
+PWMEXTRG1-IRQ
 Text GLabel 3900 1900 0    50   Input ~ 0
 PWMH2
 Text GLabel 3900 2100 0    50   Input ~ 0
@@ -119,7 +111,7 @@ Wire Wire Line
 Wire Wire Line
 	3900 2100 4150 2100
 Text GLabel 3900 2700 0    50   Input ~ 0
-PMIC_IRQ_B13
+PMIC_IRQ_PB13
 Text GLabel 3950 4500 0    50   Input ~ 0
 I2C_TWD0
 Wire Wire Line
@@ -134,38 +126,6 @@ Wire Wire Line
 	5750 3450 6000 3450
 Text GLabel 6000 3450 2    50   Input ~ 0
 PMIC_LBO
-Wire Wire Line
-	7250 1350 7050 1350
-Wire Wire Line
-	7250 1450 7050 1450
-Wire Wire Line
-	7250 1550 7050 1550
-Wire Wire Line
-	7250 1650 7050 1650
-Wire Wire Line
-	7250 1750 7050 1750
-Wire Wire Line
-	7250 1850 7050 1850
-Wire Wire Line
-	7250 1950 7050 1950
-Wire Wire Line
-	7250 2050 7050 2050
-Text GLabel 7050 1350 0    50   Input ~ 0
-LOWQ#
-Text GLabel 7050 1450 0    50   Input ~ 0
-PIOBU1
-Text GLabel 7050 1550 0    50   Input ~ 0
-PIOBU2
-Text GLabel 7050 1650 0    50   Input ~ 0
-PIOBU3
-Text GLabel 7050 1750 0    50   Input ~ 0
-PIOBU4
-Text GLabel 7050 1850 0    50   Input ~ 0
-PIOBU5
-Text GLabel 7050 1950 0    50   Input ~ 0
-PIOBU6
-Text GLabel 7050 2050 0    50   Input ~ 0
-PIOBU7
 Wire Wire Line
 	9050 1600 9100 1600
 Text GLabel 9200 1600 2    50   Input ~ 0
@@ -219,10 +179,10 @@ Wire Wire Line
 Text GLabel 9200 4500 2    50   Input ~ 0
 ADTRG-IRQ
 $Comp
-L Device:R_Small R14
+L Device:R_Small R13
 U 1 1 600D6DFE
 P 9100 1050
-F 0 "R14" H 9159 1096 50  0000 L CNN
+F 0 "R13" H 9159 1096 50  0000 L CNN
 F 1 "100K" H 9159 1005 50  0000 L CNN
 F 2 "" H 9100 1050 50  0001 C CNN
 F 3 "~" H 9100 1050 50  0001 C CNN
@@ -237,10 +197,10 @@ Wire Wire Line
 Wire Wire Line
 	9100 950  9100 850 
 $Comp
-L power:GND #PWR0123
+L power:GND #PWR024
 U 1 1 600DB627
 P 9100 850
-F 0 "#PWR0123" H 9100 600 50  0001 C CNN
+F 0 "#PWR024" H 9100 600 50  0001 C CNN
 F 1 "GND" H 9105 677 50  0000 C CNN
 F 2 "" H 9100 850 50  0001 C CNN
 F 3 "" H 9100 850 50  0001 C CNN
@@ -260,11 +220,115 @@ JTAG_TDI_PD15
 Text GLabel 9200 2800 2    50   Input ~ 0
 JTAG_TCK_PD14
 Text GLabel 2250 5600 2    50   Input ~ 0
-SDMMC_CARD_DET
+SDMMC1_CARD_DET
 Wire Wire Line
 	2000 5600 2250 5600
 Wire Wire Line
 	2000 5300 2250 5300
 Text GLabel 2250 5300 2    50   Input ~ 0
 VBUS_USBA_5V_PA27
+NoConn ~ 2000 1250
+NoConn ~ 2000 1400
+NoConn ~ 2000 1700
+NoConn ~ 2000 1550
+NoConn ~ 2000 1850
+NoConn ~ 2000 2000
+NoConn ~ 2000 2300
+Wire Wire Line
+	2000 2150 2250 2150
+NoConn ~ 2000 2450
+NoConn ~ 2000 2600
+NoConn ~ 2000 2750
+NoConn ~ 2000 2900
+Wire Wire Line
+	2000 3050 2250 3050
+NoConn ~ 2000 3200
+NoConn ~ 2000 3800
+NoConn ~ 2000 4850
+NoConn ~ 2000 4700
+NoConn ~ 2000 5000
+NoConn ~ 2000 5150
+NoConn ~ 4150 1600
+NoConn ~ 4150 1800
+NoConn ~ 4150 2000
+NoConn ~ 4150 2200
+NoConn ~ 4150 2300
+NoConn ~ 4150 2400
+NoConn ~ 4150 2500
+NoConn ~ 4150 2600
+NoConn ~ 4150 2800
+NoConn ~ 4150 2900
+NoConn ~ 4150 3000
+NoConn ~ 4150 3100
+NoConn ~ 4150 3200
+NoConn ~ 4150 3300
+NoConn ~ 4150 3400
+NoConn ~ 4150 3500
+NoConn ~ 4150 3600
+NoConn ~ 4150 3700
+NoConn ~ 4150 3800
+NoConn ~ 4150 3900
+NoConn ~ 4150 4000
+NoConn ~ 4150 4100
+NoConn ~ 4150 4200
+NoConn ~ 4150 4300
+NoConn ~ 4150 4400
+NoConn ~ 5750 2750
+NoConn ~ 5750 2850
+NoConn ~ 5750 2950
+NoConn ~ 5750 3050
+NoConn ~ 5750 3150
+NoConn ~ 5750 3250
+NoConn ~ 5750 3350
+NoConn ~ 5750 3550
+NoConn ~ 5750 3650
+NoConn ~ 5750 3750
+NoConn ~ 5750 3850
+NoConn ~ 5750 3950
+NoConn ~ 5750 4050
+NoConn ~ 5750 4150
+NoConn ~ 5750 4250
+NoConn ~ 5750 4350
+NoConn ~ 5750 4450
+NoConn ~ 5750 4550
+NoConn ~ 5750 4650
+NoConn ~ 5750 4750
+NoConn ~ 5750 4850
+NoConn ~ 5750 4950
+NoConn ~ 5750 5050
+NoConn ~ 5750 5150
+NoConn ~ 5750 5250
+NoConn ~ 5750 5350
+NoConn ~ 5750 5450
+NoConn ~ 5750 5550
+NoConn ~ 5750 5650
+NoConn ~ 5750 5750
+NoConn ~ 9050 4400
+NoConn ~ 9050 4300
+NoConn ~ 9050 4200
+NoConn ~ 9050 4100
+NoConn ~ 9050 4000
+NoConn ~ 9050 3900
+NoConn ~ 9050 3200
+NoConn ~ 9050 2600
+NoConn ~ 9050 2500
+NoConn ~ 9050 2400
+NoConn ~ 9050 2300
+NoConn ~ 9050 1500
+NoConn ~ 9050 1400
+Text GLabel 2250 3350 2    50   Input ~ 0
+SPI0_SCK
+Wire Wire Line
+	2000 3350 2250 3350
+NoConn ~ 7250 1350
+NoConn ~ 7250 1450
+NoConn ~ 7250 1550
+NoConn ~ 7250 1650
+NoConn ~ 7250 1750
+NoConn ~ 7250 1850
+NoConn ~ 7250 1950
+NoConn ~ 7250 2050
+NoConn ~ 9050 2200
+NoConn ~ 9050 2100
+NoConn ~ 9050 2000
 $EndSCHEMATC
