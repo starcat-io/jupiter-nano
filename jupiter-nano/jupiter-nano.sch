@@ -28,7 +28,7 @@ $EndSheet
 $Sheet
 S 950  4850 1900 1650
 U 5F395F18
-F0 "Connectors and LEDs" 50
+F0 "Connectors, LEDs, Serial Number EEPROM" 50
 F1 "connectors.sch" 50
 $EndSheet
 $Sheet

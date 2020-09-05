@@ -278,8 +278,6 @@ NoConn ~ 5750 2850
 NoConn ~ 5750 2950
 NoConn ~ 5750 3050
 NoConn ~ 5750 3150
-NoConn ~ 5750 3250
-NoConn ~ 5750 3350
 NoConn ~ 5750 3550
 NoConn ~ 5750 3650
 NoConn ~ 5750 3750
@@ -331,4 +329,12 @@ NoConn ~ 7250 2050
 NoConn ~ 9050 2200
 NoConn ~ 9050 2100
 NoConn ~ 9050 2000
+Text GLabel 6000 3250 2    50   Input ~ 0
+I2C_TWD1_PC6
+Text GLabel 6000 3350 2    50   Input ~ 0
+I2C_TWCK1_PC7
+Wire Wire Line
+	5750 3250 6000 3250
+Wire Wire Line
+	5750 3350 6000 3350
 $EndSCHEMATC
