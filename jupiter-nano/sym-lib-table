@@ -4,4 +4,5 @@
   (lib (name ATSAMA5D27C-LD1G)(type Legacy)(uri ${KIPRJMOD}/libraries/ATSAMA5D27C-LD1G.lib)(options "")(descr ""))
   (lib (name MIC524720YM5TR)(type Legacy)(uri ${KIPRJMOD}/libraries/MIC524720YM5TR.lib)(options "")(descr ""))
   (lib (name starcat)(type Legacy)(uri ${KIPRJMOD}/starcat.lib)(options "")(descr ""))
+  (lib (name at24csw080)(type Legacy)(uri ${KIPRJMOD}/at24csw080.lib)(options "")(descr ""))
 )
