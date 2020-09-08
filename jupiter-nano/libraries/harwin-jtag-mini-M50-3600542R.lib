@@ -1,0 +1,36 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#(c) SnapEDA 2016 (snapeda.com)
+#This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA) with Design Exception 1.0
+#
+# M50-3600542R
+#
+DEF M50-3600542R J 0 40 Y Y 1 L N
+F0 "J" 750 300 50 H V L BNN
+F1 "M50-3600542R" 750 200 50 H V L BNN
+F2 "HUSSP10W40P127_2X5_635X340X420" 0 0 50 H I L BNN
+F3 "mm" 0 0 50 H I L BNN
+F4 "https://www.mouser.co.uk/ProductDetail/Harwin/M50-3600542R?qs=DVxm2sPGGrrPu%2FxuhpV3yw%3D%3D" 0 0 50 H I L BNN
+F5 "HARWIN" 0 0 50 H I L BNN
+F6 "M50-3600542R" 0 0 50 H I L BNN
+F7 "855-M50-3600542R" 0 0 50 H I L BNN
+F8 "HARWIN Archer M50, 1.27mm Pitch, 10 Way, 2 Row Unshrouded, Right Angle Pin Header, Surface Mount, Solder Termination" 0 0 50 H I L BNN
+DRAW
+P 2 0 0 10 200 100 700 100 N
+P 2 0 0 10 700 -500 700 100 N
+P 2 0 0 10 700 -500 200 -500 N
+P 2 0 0 10 200 100 200 -500 N
+X 1 1 0 0 200 R 40 40 0 0 B 
+X 3 3 0 -100 200 R 40 40 0 0 B 
+X 5 5 0 -200 200 R 40 40 0 0 B 
+X 7 7 0 -300 200 R 40 40 0 0 B 
+X 9 9 0 -400 200 R 40 40 0 0 B 
+X 2 2 900 0 200 L 40 40 0 0 B 
+X 4 4 900 -100 200 L 40 40 0 0 B 
+X 6 6 900 -200 200 L 40 40 0 0 B 
+X 8 8 900 -300 200 L 40 40 0 0 B 
+X 10 10 900 -400 200 L 40 40 0 0 B 
+ENDDRAW
+ENDDEF
+#
+# End Library

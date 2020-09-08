@@ -1,5 +1,3 @@
 (fp_lib_table
-  (lib (name libraries)(type KiCad)(uri /Users/adam/personal/work/starcat/engineering/jupiter/boards/libraries)(options "")(descr ""))
-  (lib (name ACT8945AQJ305-T)(type Eagle)(uri /Users/adam/personal/work/starcat/engineering/jupiter/boards/libraries/ACT8945AQJ305-T.lbr)(options "")(descr ""))
-  (lib (name MCP2200-I_MQ)(type Eagle)(uri /Users/adam/personal/work/starcat/engineering/jupiter/boards/libraries/MCP2200-I_MQ.lbr)(options "")(descr ""))
+  (lib (name libraries)(type KiCad)(uri ${KIPRJMOD}/libraries)(options "")(descr ""))
 )

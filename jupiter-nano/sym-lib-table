@@ -5,4 +5,8 @@
   (lib (name MIC524720YM5TR)(type Legacy)(uri ${KIPRJMOD}/libraries/MIC524720YM5TR.lib)(options "")(descr ""))
   (lib (name starcat)(type Legacy)(uri ${KIPRJMOD}/libraries/starcat.lib)(options "")(descr ""))
   (lib (name at24csw080)(type Legacy)(uri ${KIPRJMOD}/libraries/at24csw080.lib)(options "")(descr ""))
+  (lib (name ck-pushbutton-switch-smd-PTS810SJG250SMTRLFS)(type Legacy)(uri ${KIPRJMOD}/libraries/ck-pushbutton-switch-smd-PTS810SJG250SMTRLFS.lib)(options "")(descr ""))
+  (lib (name amphenol_sd_card_socket_1140084168)(type Legacy)(uri ${KIPRJMOD}/libraries/amphenol_sd_card_socket_1140084168.lib)(options "")(descr ""))
+  (lib (name harwin-jtag-mini-M50-3600542R)(type Legacy)(uri ${KIPRJMOD}/libraries/harwin-jtag-mini-M50-3600542R.lib)(options "")(descr ""))
+  (lib (name hirose-usb-micro-b-connector-ZX62D-AB-5P830)(type Legacy)(uri ${KIPRJMOD}/libraries/hirose-usb-micro-b-connector-ZX62D-AB-5P830.lib)(options "")(descr ""))
 )
