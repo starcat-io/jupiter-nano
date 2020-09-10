@@ -5377,12 +5377,6 @@ Wire Wire Line
 Wire Wire Line
 	2650 15400 2650 15500
 Wire Wire Line
-	5950 15400 5950 15450
-Wire Wire Line
-	5950 15450 5750 15450
-Wire Wire Line
-	5750 15450 5750 15500
-Wire Wire Line
 	2800 17000 2800 17100
 Wire Wire Line
 	2800 17100 2550 17100
@@ -5415,19 +5409,6 @@ F 3 "" H 2550 17400 79  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L starcat:CGND #CGND?
-U 1 1 60662813
-P 5750 15600
-AR Path="/5F395F18/60662813" Ref="#CGND?"  Part="1" 
-AR Path="/60662813" Ref="#CGND02"  Part="1" 
-F 0 "#CGND02" H 5750 15700 79  0001 C CNN
-F 1 "CGND" H 5550 15450 59  0000 L CNN
-F 2 "" H 5750 15700 79  0001 C CNN
-F 3 "" H 5750 15700 79  0001 C CNN
-	1    5750 15600
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR?
 U 1 1 60662819
 P 2950 15500
@@ -5438,19 +5419,6 @@ F 1 "GND" H 2955 15327 50  0000 C CNN
 F 2 "" H 2950 15500 50  0001 C CNN
 F 3 "" H 2950 15500 50  0001 C CNN
 	1    2950 15500
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 6066281F
-P 6050 15500
-AR Path="/5F395F18/6066281F" Ref="#PWR?"  Part="1" 
-AR Path="/6066281F" Ref="#PWR068"  Part="1" 
-F 0 "#PWR068" H 6050 15250 50  0001 C CNN
-F 1 "GND" H 6055 15327 50  0000 C CNN
-F 2 "" H 6050 15500 50  0001 C CNN
-F 3 "" H 6050 15500 50  0001 C CNN
-	1    6050 15500
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -5482,14 +5450,6 @@ Wire Wire Line
 	3200 16600 3400 16600
 Wire Wire Line
 	3200 16700 3400 16700
-Text GLabel 6500 15000 2    50   Input ~ 0
-USBB_P
-Text GLabel 6500 15100 2    50   Input ~ 0
-USBB_M
-Wire Wire Line
-	6350 15000 6500 15000
-Wire Wire Line
-	6350 15100 6500 15100
 $Comp
 L Device:R_Small R?
 U 1 1 6066283B
@@ -5695,8 +5655,6 @@ Wire Wire Line
 	9850 18400 9500 18400
 Text Notes 2650 14400 0    79   ~ 0
 Native USB Host
-Text Notes 5700 14400 0    79   ~ 0
-Native USB Device
 $Comp
 L Device:R_Small R?
 U 1 1 606628B9
@@ -5800,7 +5758,6 @@ F 3 "" H 4850 19250 50  0001 C CNN
 $EndComp
 NoConn ~ 3250 15200
 NoConn ~ 3200 16800
-NoConn ~ 6350 15200
 Wire Wire Line
 	5200 18750 7450 18750
 Connection ~ 5200 18750
@@ -5810,16 +5767,10 @@ Connection ~ 5600 18850
 Wire Wire Line
 	3450 14500 4650 14500
 Wire Wire Line
-	6050 15400 6050 15500
-Wire Wire Line
-	6350 14800 6500 14800
-Wire Wire Line
 	3250 14800 3450 14800
 Wire Wire Line
 	3200 16400 3400 16400
 Text GLabel 3400 16400 2    50   Input ~ 0
-VBUS
-Text GLabel 6500 14800 2    50   Input ~ 0
 VBUS
 Text GLabel 4650 14500 2    50   Input ~ 0
 VBUS
@@ -6002,19 +5953,6 @@ F 1 "USB_B_Micro" H 3007 15376 50  0000 C CNN
 F 2 "libraries:hirose-usb-micro-b-connector-ZX62D-AB-5P830" H 3100 14950 50  0001 C CNN
 F 3 "~" H 3100 14950 50  0001 C CNN
 	1    2950 15000
-	1    0    0    -1  
-$EndComp
-$Comp
-L starcat:USB_B_Micro J?
-U 1 1 60662952
-P 6050 15000
-AR Path="/5F395F18/60662952" Ref="J?"  Part="1" 
-AR Path="/60662952" Ref="J2"  Part="1" 
-F 0 "J2" H 6107 15467 50  0000 C CNN
-F 1 "USB_B_Micro" H 6107 15376 50  0000 C CNN
-F 2 "libraries:hirose-usb-micro-b-connector-ZX62D-AB-5P830" H 6200 14950 50  0001 C CNN
-F 3 "~" H 6200 14950 50  0001 C CNN
-	1    6050 15000
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -6359,8 +6297,6 @@ Wire Wire Line
 	20950 9800 20950 10150
 Wire Wire Line
 	20950 10150 21700 10150
-Text Notes 5300 16050 0    79   ~ 0
-Native HSIC
 $Comp
 L Connector_Generic:Conn_01x24 J3
 U 1 1 65CBFED5
@@ -6579,8 +6515,6 @@ Wire Wire Line
 Connection ~ 1700 19550
 Wire Wire Line
 	1700 19550 1700 19950
-Entry Wire Line
-	13650 6900 13750 7000
 Text Label 10000 3100 2    50   ~ 0
 PMIC_STATUS
 $Comp
