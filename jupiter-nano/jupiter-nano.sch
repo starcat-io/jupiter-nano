@@ -1448,14 +1448,6 @@ NoConn ~ 19000 15200
 NoConn ~ 20800 15350
 NoConn ~ 20800 15250
 NoConn ~ 20800 15150
-Text GLabel 18000 16550 2    50   Input ~ 0
-I2C_TWD1_PC6
-Text GLabel 18000 16650 2    50   Input ~ 0
-I2C_TWCK1_PC7
-Wire Wire Line
-	17750 16550 18000 16550
-Wire Wire Line
-	17750 16650 18000 16650
 $Comp
 L ATSAMA5D27C-LD1G:ATSAMA5D27C-LD1G-CU U?
 U 1 1 5F9BA724
@@ -1898,7 +1890,7 @@ Wire Wire Line
 Text GLabel 26500 10150 2    50   Input ~ 0
 USBU_P
 Text GLabel 26500 10350 2    50   Input ~ 0
-USBU_M
+USBU_N
 $Comp
 L Device:R_Small R?
 U 1 1 5FC980DB
@@ -5431,7 +5423,7 @@ USBA_N
 Text GLabel 3400 16600 2    50   Input ~ 0
 USBU_P
 Text GLabel 3400 16700 2    50   Input ~ 0
-USBU_M
+USBU_N
 Wire Wire Line
 	3200 16600 3400 16600
 Wire Wire Line
@@ -6130,7 +6122,7 @@ AD1
 Text GLabel 28200 15550 0    50   Input ~ 0
 AD0
 Text GLabel 28200 16150 0    50   Input ~ 0
-NC
+SPI1_NPCS2
 Text GLabel 28200 16250 0    50   Input ~ 0
 SPI1_MISO
 Text GLabel 28200 16350 0    50   Input ~ 0
@@ -6612,4 +6604,8 @@ F 3 "" H 30750 1900 60  0000 C CNN
 	5    30750 1900
 	1    0    0    -1  
 $EndComp
+Text GLabel 18000 16550 2    50   Input ~ 0
+SPI1_NPCS2
+Wire Wire Line
+	17750 16550 18000 16550
 $EndSCHEMATC
