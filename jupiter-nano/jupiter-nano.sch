@@ -1654,7 +1654,7 @@ Wire Wire Line
 Text GLabel 17600 10650 2    50   Input ~ 0
 USBA_P
 Text GLabel 17600 10750 2    50   Input ~ 0
-USBA_M
+USBA_N
 Text GLabel 17600 10950 2    50   Input ~ 0
 USBB_P
 Text GLabel 17600 11050 2    50   Input ~ 0
@@ -5427,7 +5427,7 @@ VBUS_USBA_5V
 Text GLabel 3500 15000 2    50   Input ~ 0
 USBA_P
 Text GLabel 3500 15100 2    50   Input ~ 0
-USBA_M
+USBA_N
 Text GLabel 3400 16600 2    50   Input ~ 0
 USBU_P
 Text GLabel 3400 16700 2    50   Input ~ 0
