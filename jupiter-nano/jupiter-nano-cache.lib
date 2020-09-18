@@ -1018,22 +1018,6 @@ X 2 2 250 0 50 L 30 30 1 1 I
 ENDDRAW
 ENDDEF
 #
-# starcat_CGND
-#
-DEF starcat_CGND #PWR 0 0 Y Y 1 F P
-F0 "#PWR" 0 100 79 H I C CNN
-F1 "starcat_CGND" -50 -150 59 H V C CNN
-F2 "" 0 100 79 H I C CNN
-F3 "" 0 100 79 H I C CNN
-DRAW
-P 2 0 1 5 -100 0 -150 -100 N
-P 2 0 1 5 0 0 -50 -100 N
-P 2 0 1 5 0 0 0 100 N
-P 3 0 1 5 -100 0 100 0 50 -100 N
-X CGND 1 0 100 100 D 50 50 0 0 W N
-ENDDRAW
-ENDDEF
-#
 # starcat_USB_B_Micro
 #
 DEF starcat_USB_B_Micro J 0 40 Y Y 1 F N
