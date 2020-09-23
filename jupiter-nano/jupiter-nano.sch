@@ -2512,19 +2512,6 @@ F 3 "~" H 16000 3050 50  0001 C CNN
 	1    16000 3050
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:C C?
-U 1 1 5F7441A6
-P 16350 4250
-AR Path="/5F395E67/5F7441A6" Ref="C?"  Part="1" 
-AR Path="/5F7441A6" Ref="C41"  Part="1" 
-F 0 "C41" H 16350 4350 50  0000 L CNN
-F 1 "0.1uF" H 16350 4150 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric" H 16388 4100 50  0001 C CNN
-F 3 "~" H 16350 4250 50  0001 C CNN
-	1    16350 4250
-	1    0    0    -1  
-$EndComp
 Connection ~ 19450 3950
 Wire Wire Line
 	14800 4550 15300 4550
@@ -2552,31 +2539,9 @@ Wire Wire Line
 Connection ~ 17400 4550
 Wire Wire Line
 	17400 4400 17400 4550
-Wire Wire Line
-	17050 4550 16700 4550
 Connection ~ 17050 4550
 Wire Wire Line
 	17050 4400 17050 4550
-Wire Wire Line
-	16700 4550 16350 4550
-Connection ~ 16700 4550
-Wire Wire Line
-	16700 4400 16700 4550
-Wire Wire Line
-	16350 4550 16000 4550
-Connection ~ 16350 4550
-Wire Wire Line
-	16350 4400 16350 4550
-Wire Wire Line
-	16000 4550 15650 4550
-Connection ~ 16000 4550
-Wire Wire Line
-	16000 4400 16000 4550
-Wire Wire Line
-	15650 4550 15300 4550
-Connection ~ 15650 4550
-Wire Wire Line
-	15650 4400 15650 4550
 Connection ~ 15300 4550
 Wire Wire Line
 	15300 4400 15300 4550
@@ -2622,31 +2587,9 @@ Wire Wire Line
 Connection ~ 17400 3950
 Wire Wire Line
 	17400 4100 17400 3950
-Wire Wire Line
-	17050 3950 16700 3950
 Connection ~ 17050 3950
 Wire Wire Line
 	17050 4100 17050 3950
-Wire Wire Line
-	16700 3950 16350 3950
-Connection ~ 16700 3950
-Wire Wire Line
-	16700 4100 16700 3950
-Wire Wire Line
-	16350 3950 16000 3950
-Connection ~ 16350 3950
-Wire Wire Line
-	16350 4100 16350 3950
-Wire Wire Line
-	16000 3950 15650 3950
-Connection ~ 16000 3950
-Wire Wire Line
-	16000 4100 16000 3950
-Wire Wire Line
-	15650 3950 15300 3950
-Connection ~ 15650 3950
-Wire Wire Line
-	15650 4100 15650 3950
 Connection ~ 15300 3950
 Wire Wire Line
 	15300 4100 15300 3950
@@ -2663,45 +2606,6 @@ F 1 "10uF" H 15300 4150 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0402_1005Metric" H 15338 4100 50  0001 C CNN
 F 3 "~" H 15300 4250 50  0001 C CNN
 	1    15300 4250
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C?
-U 1 1 5F744150
-P 15650 4250
-AR Path="/5F395E67/5F744150" Ref="C?"  Part="1" 
-AR Path="/5F744150" Ref="C39"  Part="1" 
-F 0 "C39" H 15650 4350 50  0000 L CNN
-F 1 "10uF" H 15650 4150 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric" H 15688 4100 50  0001 C CNN
-F 3 "~" H 15650 4250 50  0001 C CNN
-	1    15650 4250
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C?
-U 1 1 5F74414A
-P 16000 4250
-AR Path="/5F395E67/5F74414A" Ref="C?"  Part="1" 
-AR Path="/5F74414A" Ref="C40"  Part="1" 
-F 0 "C40" H 16000 4350 50  0000 L CNN
-F 1 "0.1uF" H 16000 4150 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric" H 16038 4100 50  0001 C CNN
-F 3 "~" H 16000 4250 50  0001 C CNN
-	1    16000 4250
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C?
-U 1 1 5F744144
-P 16700 4250
-AR Path="/5F395E67/5F744144" Ref="C?"  Part="1" 
-AR Path="/5F744144" Ref="C42"  Part="1" 
-F 0 "C42" H 16700 4350 50  0000 L CNN
-F 1 "0.1uF" H 16700 4150 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric" H 16738 4100 50  0001 C CNN
-F 3 "~" H 16700 4250 50  0001 C CNN
-	1    16700 4250
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -2925,24 +2829,12 @@ $EndComp
 Text GLabel 15100 5950 0    50   Input ~ 0
 VDDIODDR
 Wire Wire Line
-	17350 6550 17000 6550
-Wire Wire Line
-	17350 6400 17350 6550
-Wire Wire Line
 	17000 6550 16650 6550
-Connection ~ 17000 6550
 Wire Wire Line
 	17000 6400 17000 6550
-Wire Wire Line
-	16650 6550 16300 6550
 Connection ~ 16650 6550
 Wire Wire Line
 	16650 6400 16650 6550
-Wire Wire Line
-	16300 6550 15950 6550
-Connection ~ 16300 6550
-Wire Wire Line
-	16300 6400 16300 6550
 Wire Wire Line
 	15950 6550 15600 6550
 Connection ~ 15950 6550
@@ -2972,24 +2864,12 @@ F 3 "" H 15100 6550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	17350 5950 17000 5950
-Wire Wire Line
-	17350 6100 17350 5950
-Wire Wire Line
 	17000 5950 16650 5950
-Connection ~ 17000 5950
 Wire Wire Line
 	17000 6100 17000 5950
-Wire Wire Line
-	16650 5950 16300 5950
 Connection ~ 16650 5950
 Wire Wire Line
 	16650 6100 16650 5950
-Wire Wire Line
-	16300 5950 15950 5950
-Connection ~ 16300 5950
-Wire Wire Line
-	16300 6100 16300 5950
 Wire Wire Line
 	15950 5950 15600 5950
 Connection ~ 15950 5950
@@ -3043,19 +2923,6 @@ F 3 "~" H 15950 6250 50  0001 C CNN
 $EndComp
 $Comp
 L Device:C C?
-U 1 1 5F744097
-P 16300 6250
-AR Path="/5F395E67/5F744097" Ref="C?"  Part="1" 
-AR Path="/5F744097" Ref="C65"  Part="1" 
-F 0 "C65" H 16300 6350 50  0000 L CNN
-F 1 "0.1uF" H 16300 6150 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric" H 16338 6100 50  0001 C CNN
-F 3 "~" H 16300 6250 50  0001 C CNN
-	1    16300 6250
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C?
 U 1 1 5F744091
 P 16650 6250
 AR Path="/5F395E67/5F744091" Ref="C?"  Part="1" 
@@ -3080,38 +2947,13 @@ F 3 "~" H 17000 6250 50  0001 C CNN
 	1    17000 6250
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:C C?
-U 1 1 5F744085
-P 17350 6250
-AR Path="/5F395E67/5F744085" Ref="C?"  Part="1" 
-AR Path="/5F744085" Ref="C68"  Part="1" 
-F 0 "C68" H 17350 6350 50  0000 L CNN
-F 1 "0.1uF" H 17350 6150 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric" H 17388 6100 50  0001 C CNN
-F 3 "~" H 17350 6250 50  0001 C CNN
-	1    17350 6250
-	1    0    0    -1  
-$EndComp
 Text GLabel 15100 4950 0    50   Input ~ 0
 VDDIODDR
 Connection ~ 15250 4950
 Wire Wire Line
 	15250 4950 15100 4950
 Wire Wire Line
-	17000 5550 16650 5550
-Wire Wire Line
 	17000 5400 17000 5550
-Wire Wire Line
-	16650 5550 16300 5550
-Connection ~ 16650 5550
-Wire Wire Line
-	16650 5400 16650 5550
-Wire Wire Line
-	16300 5550 15950 5550
-Connection ~ 16300 5550
-Wire Wire Line
-	16300 5400 16300 5550
 Wire Wire Line
 	15950 5550 15600 5550
 Connection ~ 15950 5550
@@ -3141,19 +2983,7 @@ F 3 "" H 15100 5550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	17000 4950 16650 4950
-Wire Wire Line
 	17000 5100 17000 4950
-Wire Wire Line
-	16650 4950 16300 4950
-Connection ~ 16650 4950
-Wire Wire Line
-	16650 5100 16650 4950
-Wire Wire Line
-	16300 4950 15950 4950
-Connection ~ 16300 4950
-Wire Wire Line
-	16300 5100 16300 4950
 Wire Wire Line
 	15950 4950 15600 4950
 Connection ~ 15950 4950
@@ -3203,32 +3033,6 @@ F 1 "0.1uF" H 15950 5150 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0402_1005Metric" H 15988 5100 50  0001 C CNN
 F 3 "~" H 15950 5250 50  0001 C CNN
 	1    15950 5250
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C?
-U 1 1 5F744044
-P 16300 5250
-AR Path="/5F395E67/5F744044" Ref="C?"  Part="1" 
-AR Path="/5F744044" Ref="C57"  Part="1" 
-F 0 "C57" H 16300 5350 50  0000 L CNN
-F 1 "0.1uF" H 16300 5150 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric" H 16338 5100 50  0001 C CNN
-F 3 "~" H 16300 5250 50  0001 C CNN
-	1    16300 5250
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C?
-U 1 1 5F74403E
-P 16650 5250
-AR Path="/5F395E67/5F74403E" Ref="C?"  Part="1" 
-AR Path="/5F74403E" Ref="C58"  Part="1" 
-F 0 "C58" H 16650 5350 50  0000 L CNN
-F 1 "0.1uF" H 16650 5150 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric" H 16688 5100 50  0001 C CNN
-F 3 "~" H 16650 5250 50  0001 C CNN
-	1    16650 5250
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -6610,4 +6414,451 @@ F 3 "" H 2650 15600 50  0001 C CNN
 $EndComp
 Text Notes 22500 10600 0    50   ~ 0
 SAMA5D27 UART1 RX goes to MCP2200 TX\nSAMA5D27 UART1 TX goes to MCP2200 RX\n
+Text Label 14900 3350 0    50   ~ 0
+GND
+Text Label 26350 2000 0    50   ~ 0
+VDDPLLA
+Text Label 26050 2400 0    50   ~ 0
+VDDUTIMIC
+Wire Wire Line
+	22450 7350 22800 7350
+$Comp
+L Device:C C?
+U 1 1 60BA3442
+P 23500 7050
+AR Path="/5F395E67/60BA3442" Ref="C?"  Part="1" 
+AR Path="/60BA3442" Ref="C106"  Part="1" 
+F 0 "C106" H 23500 7150 50  0000 L CNN
+F 1 "0.1uF" H 23500 6950 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 23538 6900 50  0001 C CNN
+F 3 "~" H 23500 7050 50  0001 C CNN
+	1    23500 7050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 60BA344C
+P 21750 7050
+AR Path="/5F395E67/60BA344C" Ref="C?"  Part="1" 
+AR Path="/60BA344C" Ref="C101"  Part="1" 
+F 0 "C101" H 21750 7150 50  0000 L CNN
+F 1 "0.1uF" H 21750 6950 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 21788 6900 50  0001 C CNN
+F 3 "~" H 21750 7050 50  0001 C CNN
+	1    21750 7050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	20550 7350 21050 7350
+Wire Wire Line
+	20550 6750 21050 6750
+Text GLabel 20550 6750 0    50   Input ~ 0
+VDDCORE
+Wire Wire Line
+	24250 7350 23850 7350
+Connection ~ 24250 7350
+Wire Wire Line
+	24250 7200 24250 7350
+Wire Wire Line
+	23850 7350 23500 7350
+Connection ~ 23850 7350
+Wire Wire Line
+	23850 7200 23850 7350
+Wire Wire Line
+	23500 7350 23150 7350
+Connection ~ 23500 7350
+Wire Wire Line
+	23500 7200 23500 7350
+Wire Wire Line
+	23150 7350 22800 7350
+Connection ~ 23150 7350
+Wire Wire Line
+	23150 7200 23150 7350
+Connection ~ 22800 7350
+Wire Wire Line
+	22800 7200 22800 7350
+Wire Wire Line
+	22450 7350 22100 7350
+Connection ~ 22450 7350
+Wire Wire Line
+	22450 7200 22450 7350
+Wire Wire Line
+	22100 7350 21750 7350
+Connection ~ 22100 7350
+Wire Wire Line
+	22100 7200 22100 7350
+Wire Wire Line
+	21750 7350 21400 7350
+Connection ~ 21750 7350
+Wire Wire Line
+	21750 7200 21750 7350
+Wire Wire Line
+	21400 7350 21050 7350
+Connection ~ 21400 7350
+Wire Wire Line
+	21400 7200 21400 7350
+Connection ~ 21050 7350
+Wire Wire Line
+	21050 7200 21050 7350
+$Comp
+L power:GND #PWR?
+U 1 1 60BA3475
+P 20550 7350
+AR Path="/5F395E67/60BA3475" Ref="#PWR?"  Part="1" 
+AR Path="/60BA3475" Ref="#PWR068"  Part="1" 
+F 0 "#PWR068" H 20550 7100 50  0001 C CNN
+F 1 "GND" H 20555 7177 50  0000 C CNN
+F 2 "" H 20550 7350 50  0001 C CNN
+F 3 "" H 20550 7350 50  0001 C CNN
+	1    20550 7350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	24600 7350 24250 7350
+Wire Wire Line
+	24600 7200 24600 7350
+Wire Wire Line
+	24600 6750 24250 6750
+Wire Wire Line
+	24600 6900 24600 6750
+Wire Wire Line
+	24250 6750 23850 6750
+Connection ~ 24250 6750
+Wire Wire Line
+	24250 6900 24250 6750
+Wire Wire Line
+	23850 6750 23500 6750
+Connection ~ 23850 6750
+Wire Wire Line
+	23850 6900 23850 6750
+Wire Wire Line
+	23500 6750 23150 6750
+Connection ~ 23500 6750
+Wire Wire Line
+	23500 6900 23500 6750
+Wire Wire Line
+	23150 6750 22800 6750
+Connection ~ 23150 6750
+Wire Wire Line
+	23150 6900 23150 6750
+Wire Wire Line
+	22800 6750 22450 6750
+Connection ~ 22800 6750
+Wire Wire Line
+	22800 6900 22800 6750
+Wire Wire Line
+	22450 6750 22100 6750
+Connection ~ 22450 6750
+Wire Wire Line
+	22450 6900 22450 6750
+Wire Wire Line
+	22100 6750 21750 6750
+Connection ~ 22100 6750
+Wire Wire Line
+	22100 6900 22100 6750
+Wire Wire Line
+	21750 6750 21400 6750
+Connection ~ 21750 6750
+Wire Wire Line
+	21750 6900 21750 6750
+Wire Wire Line
+	21400 6750 21050 6750
+Connection ~ 21400 6750
+Wire Wire Line
+	21400 6900 21400 6750
+Connection ~ 21050 6750
+Wire Wire Line
+	21050 6900 21050 6750
+$Comp
+L Device:C C?
+U 1 1 60BA34A2
+P 21050 7050
+AR Path="/5F395E67/60BA34A2" Ref="C?"  Part="1" 
+AR Path="/60BA34A2" Ref="C99"  Part="1" 
+F 0 "C99" H 21050 7150 50  0000 L CNN
+F 1 "10uF" H 21050 6950 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 21088 6900 50  0001 C CNN
+F 3 "~" H 21050 7050 50  0001 C CNN
+	1    21050 7050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 60BA34AC
+P 21400 7050
+AR Path="/5F395E67/60BA34AC" Ref="C?"  Part="1" 
+AR Path="/60BA34AC" Ref="C100"  Part="1" 
+F 0 "C100" H 21400 7150 50  0000 L CNN
+F 1 "10uF" H 21400 6950 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 21438 6900 50  0001 C CNN
+F 3 "~" H 21400 7050 50  0001 C CNN
+	1    21400 7050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 60BA34B6
+P 22100 7050
+AR Path="/5F395E67/60BA34B6" Ref="C?"  Part="1" 
+AR Path="/60BA34B6" Ref="C102"  Part="1" 
+F 0 "C102" H 22100 7150 50  0000 L CNN
+F 1 "0.1uF" H 22100 6950 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 22138 6900 50  0001 C CNN
+F 3 "~" H 22100 7050 50  0001 C CNN
+	1    22100 7050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 60BA34C0
+P 22450 7050
+AR Path="/5F395E67/60BA34C0" Ref="C?"  Part="1" 
+AR Path="/60BA34C0" Ref="C103"  Part="1" 
+F 0 "C103" H 22450 7150 50  0000 L CNN
+F 1 "0.1uF" H 22450 6950 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 22488 6900 50  0001 C CNN
+F 3 "~" H 22450 7050 50  0001 C CNN
+	1    22450 7050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 60BA34CA
+P 22800 7050
+AR Path="/5F395E67/60BA34CA" Ref="C?"  Part="1" 
+AR Path="/60BA34CA" Ref="C104"  Part="1" 
+F 0 "C104" H 22800 7150 50  0000 L CNN
+F 1 "0.1uF" H 22800 6950 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 22838 6900 50  0001 C CNN
+F 3 "~" H 22800 7050 50  0001 C CNN
+	1    22800 7050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 60BA34D4
+P 23150 7050
+AR Path="/5F395E67/60BA34D4" Ref="C?"  Part="1" 
+AR Path="/60BA34D4" Ref="C105"  Part="1" 
+F 0 "C105" H 23150 7150 50  0000 L CNN
+F 1 "0.1uF" H 23150 6950 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 23188 6900 50  0001 C CNN
+F 3 "~" H 23150 7050 50  0001 C CNN
+	1    23150 7050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 60BA34DE
+P 23850 7050
+AR Path="/5F395E67/60BA34DE" Ref="C?"  Part="1" 
+AR Path="/60BA34DE" Ref="C107"  Part="1" 
+F 0 "C107" H 23850 7150 50  0000 L CNN
+F 1 "0.1uF" H 23850 6950 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 23888 6900 50  0001 C CNN
+F 3 "~" H 23850 7050 50  0001 C CNN
+	1    23850 7050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 60BA34E8
+P 24250 7050
+AR Path="/5F395E67/60BA34E8" Ref="C?"  Part="1" 
+AR Path="/60BA34E8" Ref="C108"  Part="1" 
+F 0 "C108" H 24250 7150 50  0000 L CNN
+F 1 "0.01uF" H 24250 6950 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 24288 6900 50  0001 C CNN
+F 3 "~" H 24250 7050 50  0001 C CNN
+	1    24250 7050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 60BA34F2
+P 24600 7050
+AR Path="/5F395E67/60BA34F2" Ref="C?"  Part="1" 
+AR Path="/60BA34F2" Ref="C109"  Part="1" 
+F 0 "C109" H 24600 7150 50  0000 L CNN
+F 1 "0.01uF" H 24600 6950 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 24638 6900 50  0001 C CNN
+F 3 "~" H 24600 7050 50  0001 C CNN
+	1    24600 7050
+	1    0    0    -1  
+$EndComp
+Text Label 20650 7350 0    50   ~ 0
+GND
+Wire Wire Line
+	24600 7350 24950 7350
+$Comp
+L Device:C C?
+U 1 1 60D84256
+P 25650 7050
+AR Path="/5F395E67/60D84256" Ref="C?"  Part="1" 
+AR Path="/60D84256" Ref="C112"  Part="1" 
+F 0 "C112" H 25650 7150 50  0000 L CNN
+F 1 "0.1uF" H 25650 6950 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 25688 6900 50  0001 C CNN
+F 3 "~" H 25650 7050 50  0001 C CNN
+	1    25650 7050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	26400 7350 26000 7350
+Connection ~ 26400 7350
+Wire Wire Line
+	26400 7200 26400 7350
+Wire Wire Line
+	26000 7350 25650 7350
+Connection ~ 26000 7350
+Wire Wire Line
+	26000 7200 26000 7350
+Wire Wire Line
+	25650 7350 25300 7350
+Connection ~ 25650 7350
+Wire Wire Line
+	25650 7200 25650 7350
+Wire Wire Line
+	25300 7350 24950 7350
+Connection ~ 25300 7350
+Wire Wire Line
+	25300 7200 25300 7350
+Connection ~ 24950 7350
+Wire Wire Line
+	24950 7200 24950 7350
+Wire Wire Line
+	26750 7350 26400 7350
+Wire Wire Line
+	26750 7200 26750 7350
+Wire Wire Line
+	26750 6750 26400 6750
+Wire Wire Line
+	26750 6900 26750 6750
+Wire Wire Line
+	26400 6750 26000 6750
+Connection ~ 26400 6750
+Wire Wire Line
+	26400 6900 26400 6750
+Wire Wire Line
+	26000 6750 25650 6750
+Connection ~ 26000 6750
+Wire Wire Line
+	26000 6900 26000 6750
+Wire Wire Line
+	25650 6750 25300 6750
+Connection ~ 25650 6750
+Wire Wire Line
+	25650 6900 25650 6750
+Wire Wire Line
+	25300 6750 24950 6750
+Connection ~ 25300 6750
+Wire Wire Line
+	25300 6900 25300 6750
+Wire Wire Line
+	24950 6750 24600 6750
+Connection ~ 24950 6750
+Wire Wire Line
+	24950 6900 24950 6750
+$Comp
+L Device:C C?
+U 1 1 60D84281
+P 24950 7050
+AR Path="/5F395E67/60D84281" Ref="C?"  Part="1" 
+AR Path="/60D84281" Ref="C110"  Part="1" 
+F 0 "C110" H 24950 7150 50  0000 L CNN
+F 1 "0.1uF" H 24950 6950 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 24988 6900 50  0001 C CNN
+F 3 "~" H 24950 7050 50  0001 C CNN
+	1    24950 7050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 60D8428B
+P 25300 7050
+AR Path="/5F395E67/60D8428B" Ref="C?"  Part="1" 
+AR Path="/60D8428B" Ref="C111"  Part="1" 
+F 0 "C111" H 25300 7150 50  0000 L CNN
+F 1 "0.1uF" H 25300 6950 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 25338 6900 50  0001 C CNN
+F 3 "~" H 25300 7050 50  0001 C CNN
+	1    25300 7050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 60D84295
+P 26000 7050
+AR Path="/5F395E67/60D84295" Ref="C?"  Part="1" 
+AR Path="/60D84295" Ref="C113"  Part="1" 
+F 0 "C113" H 26000 7150 50  0000 L CNN
+F 1 "0.1uF" H 26000 6950 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 26038 6900 50  0001 C CNN
+F 3 "~" H 26000 7050 50  0001 C CNN
+	1    26000 7050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 60D8429F
+P 26400 7050
+AR Path="/5F395E67/60D8429F" Ref="C?"  Part="1" 
+AR Path="/60D8429F" Ref="C114"  Part="1" 
+F 0 "C114" H 26400 7150 50  0000 L CNN
+F 1 "0.1uF" H 26400 6950 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 26438 6900 50  0001 C CNN
+F 3 "~" H 26400 7050 50  0001 C CNN
+	1    26400 7050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 60D842A9
+P 26750 7050
+AR Path="/5F395E67/60D842A9" Ref="C?"  Part="1" 
+AR Path="/60D842A9" Ref="C115"  Part="1" 
+F 0 "C115" H 26750 7150 50  0000 L CNN
+F 1 "0.1uF" H 26750 6950 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 26788 6900 50  0001 C CNN
+F 3 "~" H 26750 7050 50  0001 C CNN
+	1    26750 7050
+	1    0    0    -1  
+$EndComp
+Connection ~ 24600 6750
+Connection ~ 24600 7350
+Wire Wire Line
+	27100 7350 26750 7350
+Wire Wire Line
+	27100 7200 27100 7350
+Wire Wire Line
+	27100 6750 26750 6750
+Wire Wire Line
+	27100 6900 27100 6750
+$Comp
+L Device:C C?
+U 1 1 60F85776
+P 27100 7050
+AR Path="/5F395E67/60F85776" Ref="C?"  Part="1" 
+AR Path="/60F85776" Ref="C116"  Part="1" 
+F 0 "C116" H 27100 7150 50  0000 L CNN
+F 1 "0.1uF" H 27100 6950 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 27138 6900 50  0001 C CNN
+F 3 "~" H 27100 7050 50  0001 C CNN
+	1    27100 7050
+	1    0    0    -1  
+$EndComp
+Connection ~ 26750 6750
+Connection ~ 26750 7350
+Wire Wire Line
+	15950 5950 16650 5950
+Wire Wire Line
+	15950 6550 16650 6550
+Wire Wire Line
+	15950 5550 17000 5550
+Wire Wire Line
+	15950 4950 17000 4950
+Wire Wire Line
+	15300 3950 17050 3950
+Wire Wire Line
+	15300 4550 17050 4550
 $EndSCHEMATC
