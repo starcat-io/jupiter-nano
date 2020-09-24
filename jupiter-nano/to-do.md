@@ -2,18 +2,18 @@
 
 ## To Do
 
-- move VDDIODDR caps to BGA footprint
-- route all VDDIODDR traces
-- route all VDDCORE traces
-- retune SDMMC1_DAT3
 - figure out where to place the ferrite beads
  - look at Giant Board placement
+- retune SDMMC1_DAT3
 - route pin traces
 - route remaining BGA traces
 - route remaining traces
 
 ## Done
 
+- move VDDIODDR caps to BGA footprint
+- route all VDDIODDR traces
+- route all VDDCORE traces
 - add new VDDCORE caps
 - placements
 - USB traces
