@@ -534,10 +534,6 @@ Wire Wire Line
 	22400 3650 22400 3750
 Connection ~ 22400 3650
 Connection ~ 22400 3750
-Text GLabel 12700 1900 2    50   Input ~ 0
-VDDIOP1
-Text GLabel 12700 2150 2    50   Input ~ 0
-VDDIOP2
 $Comp
 L MIC524720YM5TR:MIC5247-2.0YM5-TR U?
 U 1 1 5F82D21A
@@ -2246,23 +2242,9 @@ Connection ~ 25200 11750
 Wire Wire Line
 	25200 11750 25200 12050
 Wire Wire Line
-	12150 2150 12700 2150
-Text GLabel 12150 2150 0    50   Input ~ 0
-VDD_3V3
-Wire Wire Line
-	12150 1900 12700 1900
-Text GLabel 12150 1900 0    50   Input ~ 0
-VDD_3V3
-Wire Wire Line
 	12150 1150 12700 1150
 Wire Wire Line
 	12150 1400 12700 1400
-Wire Wire Line
-	12150 1650 12700 1650
-Text GLabel 12700 1650 2    50   Input ~ 0
-VDDIOP0
-Text GLabel 12150 1650 0    50   Input ~ 0
-VDD_3V3
 Text GLabel 19000 4700 0    50   Input ~ 0
 DDR_VREF
 Connection ~ 19450 4700
