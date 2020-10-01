@@ -9,6 +9,7 @@
 
 ## Done
 
+- fixed zone fills to remove islands and deserts
 - route pin traces
 - figure out where to place the ferrite beads- at the entrance to the chip pins
  - look at Giant Board placement
