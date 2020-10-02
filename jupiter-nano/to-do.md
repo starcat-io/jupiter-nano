@@ -2,11 +2,11 @@
 
 ## To Do
 
-- check USB track lengths and retune if necessary
-- check SDMMC1 track lengths and retune if necessary
 
 ## Done
 
+- check USB track lengths and retune if necessary
+- check SDMMC1 track lengths and retune if necessary
 - check edge of board clearance (10 mil)
 - route remaining traces
 - route remaining BGA traces
