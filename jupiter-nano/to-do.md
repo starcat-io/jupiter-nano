@@ -2,13 +2,13 @@
 
 ## To Do
 
-- route remaining BGA traces
-- route remaining traces
 - check USB track lengths and retune if necessary
 - check SDMMC1 track lengths and retune if necessary
 
 ## Done
 
+- route remaining traces
+- route remaining BGA traces
 - fixed zone fills to remove islands and deserts
 - route pin traces
 - figure out where to place the ferrite beads- at the entrance to the chip pins
