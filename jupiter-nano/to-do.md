@@ -2,6 +2,7 @@
 
 ## To Do
 
+- check edge of board clearance (10 mil)
 - check USB track lengths and retune if necessary
 - check SDMMC1 track lengths and retune if necessary
 
