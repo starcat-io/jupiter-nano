@@ -1,4 +1,4 @@
-update=Thu 17 Sep 2020 05:57:29 PM PDT
+update=Wed 07 Oct 2020 04:02:25 PM PDT
 version=1
 last_client=kicad
 [general]
@@ -74,7 +74,7 @@ OthersTextSizeH=1
 OthersTextSizeThickness=0.15
 OthersTextItalic=0
 OthersTextUpright=1
-SolderMaskClearance=0.05
+SolderMaskClearance=0
 SolderMaskMinWidth=0
 SolderPasteClearance=0
 SolderPasteRatio=-0
@@ -84,19 +84,19 @@ Type=0
 Enabled=1
 [pcbnew/Layer.In1.Cu]
 Name=In1.Cu
-Type=0
+Type=2
 Enabled=1
 [pcbnew/Layer.In2.Cu]
 Name=In2.Cu
-Type=0
+Type=2
 Enabled=1
 [pcbnew/Layer.In3.Cu]
 Name=In3.Cu
-Type=0
+Type=2
 Enabled=1
 [pcbnew/Layer.In4.Cu]
 Name=In4.Cu
-Type=0
+Type=2
 Enabled=1
 [pcbnew/Layer.In5.Cu]
 Name=In5.Cu
@@ -204,7 +204,7 @@ Type=0
 Enabled=0
 [pcbnew/Layer.B.Cu]
 Name=B.Cu
-Type=0
+Type=3
 Enabled=1
 [pcbnew/Layer.B.Adhes]
 Enabled=1
