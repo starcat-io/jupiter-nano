@@ -1,6 +1,8 @@
 # To Do
 
 ## To Do
+- fix board component labels
+- number pins
 - high quality renderings
 
 
