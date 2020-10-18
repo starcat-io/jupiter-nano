@@ -1,9 +1,20 @@
 # To Do
 
 ## To Do
+- high quality renderings
 
 
 ## Done
+- update 3D models to make board renderable
+ - MCP2200
+ - ACT8945A
+ - USB connectors
+ - crystals
+ - inductors
+ - JTAG connector
+ - SD Card connector
+ - switches
+ - SAMA5D27
 
 
 ## Stack Up
