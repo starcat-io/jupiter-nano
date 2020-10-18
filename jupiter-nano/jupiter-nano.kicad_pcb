@@ -11,7 +11,7 @@
 
   (page A4)
   (layers
-    (0 F.Cu signal)
+    (0 F.Cu signal hide)
     (1 In1.Cu mixed hide)
     (2 In2.Cu mixed hide)
     (3 In3.Cu mixed hide)
@@ -22,7 +22,7 @@
     (34 B.Paste user hide)
     (35 F.Paste user hide)
     (36 B.SilkS user)
-    (37 F.SilkS user)
+    (37 F.SilkS user hide)
     (38 B.Mask user hide)
     (39 F.Mask user hide)
     (40 Dwgs.User user hide)
@@ -1599,6 +1599,11 @@
       (net 314 GND))
     (pad S4 smd rect (at -5.95 6.85 90) (size 0.8 1.5) (layers B.Cu B.Paste B.Mask)
       (net 314 GND))
+    (model ${KIPRJMOD}/3dmodels/amphenol-sdcard-socket-1140084168.STEP
+      (offset (xyz 0 5.105400000000001 -0.0508))
+      (scale (xyz 1 1 1))
+      (rotate (xyz -90 0 0))
+    )
   )
 
   (module Connector_PinHeader_2.54mm:PinHeader_1x24_P2.54mm_Vertical locked (layer B.Cu) (tedit 59FED5CC) (tstamp 5F653008)
@@ -2961,6 +2966,11 @@
       (net 314 GND))
     (pad 1 smd rect (at -1.36525 0.950001 270) (size 0.9779 0.508) (layers B.Cu B.Paste B.Mask)
       (net 26 "Net-(C90-Pad1)"))
+    (model ${KIPRJMOD}/3dmodels/SOT-23-5_M5_MCH.step
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (module Crystal:Crystal_SMD_MicroCrystal_CC8V-T1A-2Pin_2.0x1.2mm (layer F.Cu) (tedit 5D24C0DC) (tstamp 5F5DDDA2)
@@ -6469,6 +6479,11 @@
       (net 314 GND))
     (pad 10 smd rect (at 2.54 -1.675 90) (size 0.65 2.85) (layers F.Cu F.Paste F.Mask)
       (net 88 NRST))
+    (model ${KIPRJMOD}/3dmodels/M50-3600542.STEP
+      (offset (xyz -28.6004 -0 0.5842000000000001))
+      (scale (xyz 1 1 1))
+      (rotate (xyz -90 0 -90))
+    )
   )
 
   (module Package_TO_SOT_SMD:SOT-23 (layer F.Cu) (tedit 5A02FF57) (tstamp 5F5DB1AA)
@@ -8050,6 +8065,11 @@
       (net 60 WAKEUP))
     (pad 1 smd rect (at -2.075 -1.074999) (size 1.0414 0.6604) (layers F.Cu F.Paste F.Mask)
       (net 314 GND))
+    (model ${KIPRJMOD}/3dmodels/PTS810.step
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (module libraries:ck-pushbutton-switch-smd-PTS810SJG250SMTRLFS locked (layer F.Cu) (tedit 0) (tstamp 5F5C23BB)
@@ -8100,6 +8120,11 @@
       (net 58 RESET))
     (pad 2 smd rect (at 2.075 -1.074999) (size 1.0414 0.6604) (layers F.Cu F.Paste F.Mask)
       (net 314 GND))
+    (model ${KIPRJMOD}/3dmodels/PTS810.step
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (module TestPoint:TestPoint_Pad_1.0x1.0mm locked (layer F.Cu) (tedit 5A0F774F) (tstamp 5F58AB1C)
