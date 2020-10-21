@@ -1,9 +1,7 @@
 # To Do
 
 ## To Do
-- fix board component labels
-- number pins
-- high quality renderings
+- order 5 prototypes
 
 
 ## Done
@@ -17,6 +15,10 @@
  - SD Card connector
  - switches
  - SAMA5D27
+- fix board component labels
+- number pins
+- high quality renderings
+- examine gerbers
 
 
 ## Stack Up
