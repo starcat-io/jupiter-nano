@@ -1,0 +1,2 @@
+width 1.535 in
+height 2.48 in
