@@ -9,4 +9,5 @@
   (lib (name amphenol_sd_card_socket_1140084168)(type Legacy)(uri ${KIPRJMOD}/libraries/amphenol_sd_card_socket_1140084168.lib)(options "")(descr ""))
   (lib (name harwin-jtag-mini-M50-3600542R)(type Legacy)(uri ${KIPRJMOD}/libraries/harwin-jtag-mini-M50-3600542R.lib)(options "")(descr ""))
   (lib (name hirose-usb-micro-b-connector-ZX62D-AB-5P830)(type Legacy)(uri ${KIPRJMOD}/libraries/hirose-usb-micro-b-connector-ZX62D-AB-5P830.lib)(options "")(descr ""))
+  (lib (name 24CS02-MAHM-T)(type Legacy)(uri ${KIPRJMOD}/libraries/24CS02-MAHM-T.lib)(options "")(descr ""))
 )
