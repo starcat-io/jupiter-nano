@@ -1,6 +1,8 @@
 # To Do
 
 ## To Do
+- oval route-outs for USB connectors on larger
+- oval paste aperture for USB connectors on all 4
 - order 5 prototypes
 
 
