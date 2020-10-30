@@ -5626,7 +5626,7 @@ AR Path="/5F395F18/6066294C" Ref="J?"  Part="1"
 AR Path="/6066294C" Ref="J2"  Part="1" 
 F 0 "J2" H 3007 15467 50  0000 C CNN
 F 1 "USB_B_Micro" H 3007 15376 50  0000 C CNN
-F 2 "libraries:hirose-usb-micro-b-connector-ZX62D-AB-5P830" H 3100 14950 50  0001 C CNN
+F 2 "libraries:hirose-usb-micro-b-connector-smd-ZX62-AB-5PA31" H 3100 14950 50  0001 C CNN
 F 3 "~" H 3100 14950 50  0001 C CNN
 	1    2950 15000
 	1    0    0    -1  
@@ -5639,7 +5639,7 @@ AR Path="/5F395F18/60662958" Ref="J?"  Part="1"
 AR Path="/60662958" Ref="J1"  Part="1" 
 F 0 "J1" H 2957 17067 50  0000 C CNN
 F 1 "USB_B_Micro" H 2957 16976 50  0000 C CNN
-F 2 "libraries:hirose-usb-micro-b-connector-ZX62D-AB-5P830" H 3050 16550 50  0001 C CNN
+F 2 "libraries:hirose-usb-micro-b-connector-smd-ZX62-AB-5PA31" H 3050 16550 50  0001 C CNN
 F 3 "~" H 3050 16550 50  0001 C CNN
 	1    2900 16600
 	1    0    0    -1  
