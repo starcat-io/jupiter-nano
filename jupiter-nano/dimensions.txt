@@ -1,0 +1,2 @@
+width 1.535 in  29.21  mm
+height 2.48 in  69.992 mm
