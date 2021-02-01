@@ -1190,28 +1190,8 @@ Wire Wire Line
 	7500 9500 8350 9500
 Connection ~ 8350 9500
 NoConn ~ 6600 11850
-Text GLabel 14250 15450 2    50   Input ~ 0
-STATUS_LED
 Text GLabel 14250 16350 2    50   Input ~ 0
 PMIC_CHGLEV_PA12
-Text GLabel 14250 16800 2    50   Input ~ 0
-FLEXCOM3_IO0
-Text GLabel 14250 17250 2    50   Input ~ 0
-SDMMC1_DAT0
-Text GLabel 14250 17400 2    50   Input ~ 0
-SDMMC1_DAT1
-Text GLabel 14250 17550 2    50   Input ~ 0
-SDMMC1_DAT2
-Text GLabel 14250 17700 2    50   Input ~ 0
-SDMMC1_DAT3
-Text GLabel 14250 17850 2    50   Input ~ 0
-SDMMC1_CK
-Text GLabel 14250 18750 2    50   Input ~ 0
-SDMMC1_CMD
-Text GLabel 14250 19050 2    50   Input ~ 0
-SDMMC1_CD
-Text GLabel 15900 14800 0    50   Input ~ 0
-PWML1
 Wire Wire Line
 	14000 16800 14250 16800
 Wire Wire Line
@@ -1247,12 +1227,6 @@ Wire Wire Line
 	14000 18750 14250 18750
 Wire Wire Line
 	14000 19050 14250 19050
-Text GLabel 15900 14700 0    50   Input ~ 0
-PWMH1
-Text GLabel 15900 15000 0    50   Input ~ 0
-PWMEXTRG1_IRQ
-Text GLabel 15900 15200 0    50   Input ~ 0
-PWMH2
 Wire Wire Line
 	15900 15000 16150 15000
 Wire Wire Line
@@ -1267,24 +1241,14 @@ Wire Wire Line
 	17750 15950 18000 15950
 Wire Wire Line
 	17750 16750 18000 16750
-Text GLabel 18000 16750 2    50   Input ~ 0
-PMIC_LBO
 Wire Wire Line
 	20800 14750 20850 14750
-Text GLabel 20950 14750 2    50   Input ~ 0
-UART1_RX
 Wire Wire Line
 	20800 14850 20950 14850
-Text GLabel 20950 14850 2    50   Input ~ 0
-UART1_TX
 Wire Wire Line
 	20800 14950 20950 14950
 Wire Wire Line
 	20800 15050 20950 15050
-Text GLabel 20950 14950 2    50   Input ~ 0
-I2C_TWD1
-Text GLabel 20950 15050 2    50   Input ~ 0
-I2C_TWCK1
 Wire Wire Line
 	20800 15850 20950 15850
 Wire Wire Line
@@ -1299,24 +1263,10 @@ Wire Wire Line
 	20800 16750 20950 16750
 Wire Wire Line
 	20800 16850 20950 16850
-Text GLabel 20950 15850 2    50   Input ~ 0
-FLEXCOM4_IO1
 Text GLabel 20950 16250 2    50   Input ~ 0
 JTAG_TMS_PD17
-Text GLabel 20950 16450 2    50   Input ~ 0
-AD0
-Text GLabel 20950 16550 2    50   Input ~ 0
-AD1
-Text GLabel 20950 16650 2    50   Input ~ 0
-AD2
-Text GLabel 20950 16750 2    50   Input ~ 0
-AD3
-Text GLabel 20950 16850 2    50   Input ~ 0
-AD4
 Wire Wire Line
 	20800 17650 20950 17650
-Text GLabel 20950 17650 2    50   Input ~ 0
-ADTRG_IRQ
 $Comp
 L Device:R_Small R?
 U 1 1 5F8F30FC
@@ -1365,7 +1315,7 @@ JTAG_TCK_PD14
 Wire Wire Line
 	14000 18600 14250 18600
 Text GLabel 14250 18450 2    50   Input ~ 0
-VBUS_USBA_5V
+VBUS_SENSE_USBA_5V_PA26
 NoConn ~ 14000 14550
 NoConn ~ 14000 14700
 NoConn ~ 14000 15000
@@ -1421,7 +1371,6 @@ NoConn ~ 17750 18150
 NoConn ~ 17750 18250
 NoConn ~ 17750 18350
 NoConn ~ 17750 18450
-NoConn ~ 17750 18750
 NoConn ~ 17750 18850
 NoConn ~ 20800 16350
 NoConn ~ 20800 15650
@@ -1820,7 +1769,7 @@ AR Path="/5F4A5621/5F9BA7DA" Ref="NT?"  Part="1"
 AR Path="/5F9BA7DA" Ref="NT2"  Part="1" 
 F 0 "NT2" V 18954 11194 50  0000 L CNN
 F 1 "Net-Tie_2" V 19045 11194 50  0000 L CNN
-F 2 "NetTie:NetTie-2_SMD_Pad0.5mm" H 19000 11150 50  0001 C CNN
+F 2 "NetTie:NetTie-2_SMD_PAD0_PD19.5mm" H 19000 11150 50  0001 C CNN
 F 3 "~" H 19000 11150 50  0001 C CNN
 	1    19000 11150
 	0    1    1    0   
@@ -1887,19 +1836,6 @@ Text GLabel 26500 10350 2    50   Input ~ 0
 USBU_N
 $Comp
 L Device:R_Small R?
-U 1 1 5FC980DB
-P 21700 9700
-AR Path="/5F395ED8/5FC980DB" Ref="R?"  Part="1" 
-AR Path="/5FC980DB" Ref="R41"  Part="1" 
-F 0 "R41" H 21759 9746 50  0000 L CNN
-F 1 "10K" H 21759 9655 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" H 21700 9700 50  0001 C CNN
-F 3 "~" H 21700 9700 50  0001 C CNN
-	1    21700 9700
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_Small R?
 U 1 1 5FC980E1
 P 23150 11800
 AR Path="/5F395ED8/5FC980E1" Ref="R?"  Part="1" 
@@ -1909,19 +1845,6 @@ F 1 "470R 1%" H 23209 11755 50  0000 L CNN
 F 2 "Resistor_SMD:R_0402_1005Metric" H 23150 11800 50  0001 C CNN
 F 3 "~" H 23150 11800 50  0001 C CNN
 	1    23150 11800
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C?
-U 1 1 5FC980E7
-P 21700 10550
-AR Path="/5F395ED8/5FC980E7" Ref="C?"  Part="1" 
-AR Path="/5FC980E7" Ref="C81"  Part="1" 
-F 0 "C81" H 21815 10596 50  0000 L CNN
-F 1 "0.1uF" H 21815 10505 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric" H 21738 10400 50  0001 C CNN
-F 3 "~" H 21700 10550 50  0001 C CNN
-	1    21700 10550
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -2052,48 +1975,24 @@ Wire Wire Line
 Wire Wire Line
 	24300 10350 23900 10350
 Text GLabel 23900 10350 0    50   Input ~ 0
-UART1_RX
+UART1_RX_PD2
 Text GLabel 23900 10250 0    50   Input ~ 0
-UART1_TX
-Wire Wire Line
-	21700 9800 21700 10150
-Wire Wire Line
-	21700 9600 21700 9450
-Text GLabel 21700 9450 1    50   Input ~ 0
+UART1_TX_PD3
+Text GLabel 21800 10150 0    50   Input ~ 0
 VDD_3V3
 Wire Wire Line
-	21700 10150 22100 10150
-Wire Wire Line
-	21700 10150 21700 10400
-Connection ~ 21700 10150
-Wire Wire Line
-	21700 10700 21700 10850
-$Comp
-L power:GND #PWR?
-U 1 1 5FC98130
-P 21700 10850
-AR Path="/5F395ED8/5FC98130" Ref="#PWR?"  Part="1" 
-AR Path="/5FC98130" Ref="#PWR067"  Part="1" 
-F 0 "#PWR067" H 21700 10600 50  0001 C CNN
-F 1 "GND" H 21705 10677 50  0000 C CNN
-F 2 "" H 21700 10850 50  0001 C CNN
-F 3 "" H 21700 10850 50  0001 C CNN
-	1    21700 10850
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	24300 10150 22300 10150
+	24300 10150 22700 10150
 $Comp
 L Device:R_Small R?
 U 1 1 5FC98137
-P 22200 10150
+P 22600 10150
 AR Path="/5F395ED8/5FC98137" Ref="R?"  Part="1" 
 AR Path="/5FC98137" Ref="R42"  Part="1" 
-F 0 "R42" V 22396 10150 50  0000 C CNN
-F 1 "470R 1%" V 22305 10150 50  0000 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" H 22200 10150 50  0001 C CNN
-F 3 "~" H 22200 10150 50  0001 C CNN
-	1    22200 10150
+F 0 "R42" V 22796 10150 50  0000 C CNN
+F 1 "4.7K 1%" V 22705 10150 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 22600 10150 50  0001 C CNN
+F 3 "~" H 22600 10150 50  0001 C CNN
+	1    22600 10150
 	0    -1   -1   0   
 $EndComp
 $Comp
@@ -2198,8 +2097,6 @@ F 3 "" H 24350 9650 50  0001 C CNN
 	1    24350 9650
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	25200 11550 25200 11750
 $Comp
 L power:GND #PWR?
 U 1 1 5FC9816F
@@ -2220,25 +2117,7 @@ NoConn ~ 24300 10850
 NoConn ~ 24300 10950
 NoConn ~ 24300 11050
 NoConn ~ 24300 11150
-$Comp
-L power:GND #PWR?
-U 1 1 5FC9817C
-P 25750 9200
-AR Path="/5F395ED8/5FC9817C" Ref="#PWR?"  Part="1" 
-AR Path="/5FC9817C" Ref="#PWR072"  Part="1" 
-F 0 "#PWR072" H 25750 8950 50  0001 C CNN
-F 1 "GND" H 25755 9027 50  0000 C CNN
-F 2 "" H 25750 9200 50  0001 C CNN
-F 3 "" H 25750 9200 50  0001 C CNN
-	1    25750 9200
-	-1   0    0    1   
-$EndComp
 NoConn ~ 24300 10450
-Wire Wire Line
-	25200 11750 26350 11750
-Connection ~ 25200 11750
-Wire Wire Line
-	25200 11750 25200 12050
 Wire Wire Line
 	12150 1150 12700 1150
 Wire Wire Line
@@ -2306,7 +2185,7 @@ AR Path="/5F395E67/5F7441FA" Ref="NT?"  Part="1"
 AR Path="/5F7441FA" Ref="NT1"  Part="1" 
 F 0 "NT1" H 18950 1181 50  0000 C CNN
 F 1 "Net-Tie_1" H 18950 1090 50  0000 C CNN
-F 2 "NetTie:NetTie-2_SMD_Pad0.5mm" H 18950 1000 50  0001 C CNN
+F 2 "NetTie:NetTie-2_SMD_PAD0_PD19.5mm" H 18950 1000 50  0001 C CNN
 F 3 "~" H 18950 1000 50  0001 C CNN
 	1    18950 1000
 	1    0    0    -1  
@@ -3687,7 +3566,7 @@ F 3 "" H 3750 3150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text GLabel 4050 4000 0    50   Input ~ 0
-I2C_TWD1
+I2C_TWD1_PD4
 Text GLabel 7000 1450 0    50   Input ~ 0
 PMIC_INL
 Connection ~ 7200 1450
@@ -4202,7 +4081,7 @@ Connection ~ 4500 4000
 Wire Wire Line
 	4500 4000 4500 4650
 Text GLabel 4050 4100 0    50   Input ~ 0
-I2C_TWCK1
+I2C_TWCK1_PD5
 Wire Wire Line
 	5400 4100 4850 4100
 Wire Wire Line
@@ -4309,13 +4188,9 @@ Wire Wire Line
 	8250 3200 8250 3300
 Wire Wire Line
 	9000 2800 9000 2750
-Wire Wire Line
-	9000 2550 9000 2500
 Connection ~ 9600 2500
 Wire Wire Line
 	9000 2500 9600 2500
-Wire Wire Line
-	9000 2600 9000 2550
 Text GLabel 10250 2500 2    50   Input ~ 0
 VDD_3V3
 Wire Wire Line
@@ -5081,7 +4956,6 @@ F 12 "Processor PMIC 40-TQFN (5x5)" H 6100 3600 50  0001 L BNN "Field12"
 	1    6100 3600
 	1    0    0    -1  
 $EndComp
-Connection ~ 9000 2550
 Text Notes 10000 17800 0    79   ~ 16
 JTAG
 Text Notes 5350 17800 0    79   ~ 16
@@ -5131,7 +5005,7 @@ F 3 "" H 2900 17300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text GLabel 4650 14800 2    50   Input ~ 0
-VBUS_USBA_5V
+VBUS_SENSE_USBA_5V_PA26
 Text GLabel 3500 15000 2    50   Input ~ 0
 USBA_P
 Text GLabel 3500 15100 2    50   Input ~ 0
@@ -5548,7 +5422,7 @@ $EndComp
 Text GLabel 10550 16450 2    50   Input ~ 0
 VDD_3V3
 Text GLabel 10550 16850 2    50   Input ~ 0
-STATUS_LED
+STATUS_LED_PA6
 $Comp
 L Device:R_Small R?
 U 1 1 60662924
@@ -5702,13 +5576,11 @@ Wire Wire Line
 Wire Wire Line
 	10300 14900 10700 14900
 Text GLabel 10700 15000 2    50   Input ~ 0
-FLEXCOM1_IO0_TWD
+FLEXCOM1_IO0_TWD_PA24
 Text GLabel 10700 14900 2    50   Input ~ 0
-FLEXCOM1_IO1_TWCK
+FLEXCOM1_IO1_TWCK_PA23
 Text Notes 8600 14150 0    79   ~ 16
 I2C EEPROM with Serial Number
-Wire Wire Line
-	28700 14950 28300 14950
 Wire Wire Line
 	28700 15050 28300 15050
 Wire Wire Line
@@ -5795,65 +5667,63 @@ F 3 "" H 30450 14950 50  0001 C CNN
 	0    -1   1    0   
 $EndComp
 Text GLabel 30450 15750 2    50   Input ~ 0
-AD4
+AD4_PD23
 Text GLabel 30450 15650 2    50   Input ~ 0
-AD3
+AD3_PD22
 Text GLabel 30450 15550 2    50   Input ~ 0
-AD2
+AD2_PD21
 Text GLabel 30450 15450 2    50   Input ~ 0
-AD1
+AD1_PD20
 Text GLabel 30450 15350 2    50   Input ~ 0
-AD0
+AD0_PD19
 Text GLabel 30450 15950 2    50   Input ~ 0
-SPI1_NPCS2
+SPI1_NPCS2_PC6
 Text GLabel 30450 16050 2    50   Input ~ 0
-SPI1_MISO
+SPI1_MISO_PC3
 Text GLabel 30450 16150 2    50   Input ~ 0
-SPI1_SPCK_CANTX0
+SPI1_SPCK_CANTX0_PC1
 Text GLabel 30450 16250 2    50   Input ~ 0
-SPI1_MOSI_CANRX0
+SPI1_MOSI_CANRX0_PC2
 Text GLabel 30450 16350 2    50   Input ~ 0
-FLEXCOM0_IO0
+FLEXCOM0_IO0_PB28
 Text GLabel 30450 16450 2    50   Input ~ 0
-FLEXCOM0_IO1
+FLEXCOM0_IO1_PB29
 Text GLabel 30450 16550 2    50   Input ~ 0
-FLEXCOM0_IO2
+FLEXCOM0_IO2_PB30
 Text GLabel 30450 16650 2    50   Input ~ 0
-FLEXCOM0_IO3
-Text GLabel 28300 14950 0    50   Input ~ 0
+FLEXCOM0_IO3_PB31
+Text GLabel 28300 15050 0    50   Input ~ 0
 VBAT
 Text GLabel 28300 15150 0    50   Input ~ 0
 WAKEUP
 Text GLabel 28300 15250 0    50   Input ~ 0
 VBUS
 Text GLabel 28300 15950 0    50   Input ~ 0
-PWML3
+PWML3_PB8
 Text GLabel 28300 15450 0    50   Input ~ 0
-PWMH1
+PWMH1_PB0
 Text GLabel 28300 15550 0    50   Input ~ 0
-PWML1
+PWML1_PB1
 Text GLabel 28300 15650 0    50   Input ~ 0
-PWMH2
+PWMH2_PB5
 Text GLabel 28300 15750 0    50   Input ~ 0
-PWML2
+PWML2_PB6
 Text GLabel 28300 16050 0    50   Input ~ 0
-PWMEXTRG1_IRQ
-Text GLabel 28300 16150 0    50   Input ~ 0
-I2C_TWCK0
+PWMEXTRG1_IRQ_PB3
 Text GLabel 28300 16250 0    50   Input ~ 0
-I2C_TWD0
+I2C_TWD0_PC27
 Text GLabel 28300 16350 0    50   Input ~ 0
-FLEXCOM2_IO0
+FLEXCOM2_IO0_PD26
 Text GLabel 28300 16450 0    50   Input ~ 0
-FLEXCOM2_IO1
+FLEXCOM2_IO1_PD27
 Text GLabel 28300 16650 0    50   Input ~ 0
-FLEXCOM2_IO3
+FLEXCOM2_IO3_PD29
 Text GLabel 28300 16550 0    50   Input ~ 0
-FLEXCOM2_IO2
+FLEXCOM2_IO2_PD28
 Text GLabel 28300 16750 0    50   Input ~ 0
-FLEXCOM2_IO4
+FLEXCOM2_IO4_PD30
 Text GLabel 28300 16850 0    50   Input ~ 0
-FLEXCOM3_IO0
+FLEXCOM3_IO0_PA15
 Wire Wire Line
 	30050 16850 30450 16850
 Wire Wire Line
@@ -5865,15 +5735,15 @@ Wire Wire Line
 Wire Wire Line
 	30050 17250 30450 17250
 Text GLabel 30450 16750 2    50   Input ~ 0
-FLEXCOM0_IO4
+FLEXCOM0_IO4_PC0
 Text GLabel 30450 16950 2    50   Input ~ 0
-FLEXCOM4_IO1
+FLEXCOM4_IO1_PD13
 Text GLabel 30450 17050 2    50   Input ~ 0
-FLEXCOM4_IO2
+FLEXCOM4_IO2_PC30
 Text GLabel 30450 17150 2    50   Input ~ 0
-FLEXCOM4_IO3
+FLEXCOM4_IO3_PC31
 Text GLabel 30450 17250 2    50   Input ~ 0
-FLEXCOM4_IO4
+FLEXCOM4_IO4_PD25
 Wire Wire Line
 	28700 16950 28300 16950
 Wire Wire Line
@@ -5883,13 +5753,13 @@ Wire Wire Line
 Wire Wire Line
 	28700 17250 28300 17250
 Text GLabel 28300 16950 0    50   Input ~ 0
-FLEXCOM3_IO1
+FLEXCOM3_IO1_PA13
 Text GLabel 28300 17050 0    50   Input ~ 0
-FLEXCOM3_IO2
+FLEXCOM3_IO2_PA14
 Text GLabel 28300 17150 0    50   Input ~ 0
-FLEXCOM3_IO3
+FLEXCOM3_IO3_PA16
 Text GLabel 28300 17250 0    50   Input ~ 0
-FLEXCOM3_IO4
+FLEXCOM3_IO4_PA17
 Wire Wire Line
 	28700 15650 28300 15650
 Wire Wire Line
@@ -5933,18 +5803,14 @@ No Connect Pins
 $Comp
 L Connector:TestPoint_Small TP1
 U 1 1 65745967
-P 20950 9800
-F 0 "TP1" H 20998 9846 50  0000 L CNN
-F 1 "nRST" H 20998 9755 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 21150 9800 50  0001 C CNN
-F 3 "~" H 21150 9800 50  0001 C CNN
-	1    20950 9800
+P 22200 9650
+F 0 "TP1" H 22248 9696 50  0000 L CNN
+F 1 "nRST" H 22248 9605 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 22400 9650 50  0001 C CNN
+F 3 "~" H 22400 9650 50  0001 C CNN
+	1    22200 9650
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	20950 9800 20950 10150
-Wire Wire Line
-	20950 10150 21700 10150
 $Comp
 L Connector_Generic:Conn_01x24 J5
 U 1 1 65CC29BD
@@ -5957,77 +5823,44 @@ F 3 "~" H 28900 16050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text GLabel 30450 16850 2    50   Input ~ 0
-FLEXCOM4_IO0
+FLEXCOM4_IO0_PD12
 Text GLabel 28300 15350 0    50   Input ~ 0
-ADTRG_IRQ
+ADTRG_IRQ_PD31
 Text GLabel 28300 15850 0    50   Input ~ 0
-PWMH3
-$Comp
-L power:GND #PWR?
-U 1 1 664C1693
-P 28300 15050
-AR Path="/5F44311A/664C1693" Ref="#PWR?"  Part="1" 
-AR Path="/664C1693" Ref="#PWR079"  Part="1" 
-F 0 "#PWR079" H 28300 14800 50  0001 C CNN
-F 1 "GND" V 28305 14922 50  0000 R CNN
-F 2 "" H 28300 15050 50  0001 C CNN
-F 3 "" H 28300 15050 50  0001 C CNN
-	1    28300 15050
-	0    1    -1   0   
-$EndComp
+PWMH3_PB7
 NoConn ~ 20800 16950
-Text GLabel 18000 16050 2    50   Input ~ 0
-SPI1_SPCK_CANTX0
-Text GLabel 18000 16150 2    50   Input ~ 0
-SPI1_MOSI_CANRX0
 Wire Wire Line
 	17750 16050 18000 16050
 Wire Wire Line
 	17750 16150 18000 16150
 Text GLabel 15950 17500 0    50   Input ~ 0
-FLEXCOM0_IO0
+FLEXCOM0_IO0_PB28
 Wire Wire Line
 	15950 17500 16150 17500
 Text GLabel 15950 17600 0    50   Input ~ 0
-FLEXCOM0_IO1
+FLEXCOM0_IO1_PB29
 Text GLabel 15950 17700 0    50   Input ~ 0
-FLEXCOM0_IO2
+FLEXCOM0_IO2_PB30
 Text GLabel 15950 17800 0    50   Input ~ 0
-FLEXCOM0_IO3
-Text GLabel 18000 15950 2    50   Input ~ 0
-FLEXCOM0_IO4
+FLEXCOM0_IO3_PB31
 Wire Wire Line
 	15950 17700 16150 17700
 Wire Wire Line
 	15950 17600 16150 17600
-Text GLabel 20950 15750 2    50   Input ~ 0
-FLEXCOM4_IO0
 Wire Wire Line
 	20800 15750 20950 15750
-Text GLabel 20950 17050 2    50   Input ~ 0
-FLEXCOM4_IO4
 Wire Wire Line
 	20800 17050 20950 17050
 Text GLabel 18000 19050 2    50   Input ~ 0
-FLEXCOM4_IO3
+FLEXCOM4_IO3_PC31
 Wire Wire Line
 	18000 19050 17750 19050
 Text GLabel 18000 18950 2    50   Input ~ 0
-FLEXCOM4_IO2
+FLEXCOM4_IO2_PC30
 Wire Wire Line
 	17750 18950 18000 18950
-Text GLabel 15900 15300 0    50   Input ~ 0
-PWML2
 Wire Wire Line
 	15900 15300 16150 15300
-Text GLabel 18000 18550 2    50   Input ~ 0
-I2C_TWCK0
-Text GLabel 18000 18650 2    50   Input ~ 0
-I2C_TWD0
-Wire Wire Line
-	17750 18550 18000 18550
-Wire Wire Line
-	17750 18650 18000 18650
 $Comp
 L ATSAMA5D27C-LD1G:ATSAMA5D27C-LD1G-CU U?
 U 4 1 5F8F30AE
@@ -6041,16 +5874,6 @@ F 3 "" H 19000 14550 60  0000 C CNN
 	4    19000 14550
 	1    0    0    -1  
 $EndComp
-Text GLabel 20950 17150 2    50   Input ~ 0
-FLEXCOM2_IO0
-Text GLabel 20950 17250 2    50   Input ~ 0
-FLEXCOM2_IO1
-Text GLabel 20950 17350 2    50   Input ~ 0
-FLEXCOM2_IO2
-Text GLabel 20950 17450 2    50   Input ~ 0
-FLEXCOM2_IO3
-Text GLabel 20950 17550 2    50   Input ~ 0
-FLEXCOM2_IO4
 Wire Wire Line
 	20800 17150 20950 17150
 Wire Wire Line
@@ -6065,33 +5888,15 @@ Wire Wire Line
 	14000 17100 14250 17100
 Wire Wire Line
 	14000 16500 14250 16500
-Text GLabel 14250 16500 2    50   Input ~ 0
-FLEXCOM3_IO1
-Text GLabel 14250 16650 2    50   Input ~ 0
-FLEXCOM3_IO2
-Text GLabel 14250 16950 2    50   Input ~ 0
-FLEXCOM3_IO3
-Text GLabel 14250 17100 2    50   Input ~ 0
-FLEXCOM3_IO4
-Text GLabel 18000 16250 2    50   Input ~ 0
-SPI1_MISO
-Text GLabel 14250 18150 2    50   Input ~ 0
-FLEXCOM1_IO0_TWD
 Wire Wire Line
 	14000 18450 14250 18450
-Text GLabel 14250 18600 2    50   Input ~ 0
-SPI1_NPCS0
 Wire Wire Line
 	14000 18000 14250 18000
 Wire Wire Line
 	17750 16250 18000 16250
 Text GLabel 30450 15850 2    50   Input ~ 0
-SPI1_NPCS0
+SPI1_NPCS0_PA27
 NoConn ~ 14000 18900
-Text GLabel 15900 15400 0    50   Input ~ 0
-PWMH3
-Text GLabel 15900 15500 0    50   Input ~ 0
-PWML3
 Wire Wire Line
 	15900 15400 16150 15400
 Wire Wire Line
@@ -6259,8 +6064,6 @@ F 3 "" H 13150 13900 60  0000 C CNN
 	2    13150 13900
 	1    0    0    -1  
 $EndComp
-Text GLabel 14250 18000 2    50   Input ~ 0
-FLEXCOM1_IO1_TWCK
 Wire Wire Line
 	14000 18150 14250 18150
 $Comp
@@ -6276,8 +6079,6 @@ F 3 "" H 30750 1900 60  0000 C CNN
 	5    30750 1900
 	1    0    0    -1  
 $EndComp
-Text GLabel 18000 16550 2    50   Input ~ 0
-SPI1_NPCS2
 Wire Wire Line
 	17750 16550 18000 16550
 Wire Wire Line
@@ -6767,32 +6568,8 @@ Text Label 8400 3300 0    50   ~ 0
 VDD_1V8
 Text Label 18950 2050 0    50   ~ 0
 VDDANA
-$Comp
-L Device:C C?
-U 1 1 5FC98183
-P 26000 9500
-AR Path="/5F395ED8/5FC98183" Ref="C?"  Part="1" 
-AR Path="/5FC98183" Ref="C98"  Part="1" 
-F 0 "C98" H 26115 9546 50  0000 L CNN
-F 1 "470nF" H 26115 9455 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric" H 26038 9350 50  0001 C CNN
-F 3 "~" H 26000 9500 50  0001 C CNN
-	1    26000 9500
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
-	25300 9500 25750 9500
-Wire Wire Line
-	25300 9500 25300 9950
-Wire Wire Line
-	26150 9500 26350 9500
-Wire Wire Line
-	26350 9500 26350 11750
-Wire Wire Line
-	25750 9200 25750 9500
-Connection ~ 25750 9500
-Wire Wire Line
-	25750 9500 25850 9500
+	25300 9650 25300 9950
 Wire Wire Line
 	5400 7050 6500 7050
 Wire Wire Line
@@ -6828,7 +6605,6 @@ F 3 "~" H 6400 20000 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 NoConn ~ 17750 16650
-NoConn ~ 24200 13050
 NoConn ~ -2050 16650
 $Comp
 L Connector_Generic:Conn_01x24 J6
@@ -6884,4 +6660,234 @@ F 3 "" H 10400 14800 50  0001 C CNN
 	1    10400 14800
 	0    -1   -1   0   
 $EndComp
+Wire Wire Line
+	21800 10150 22200 10150
+Wire Wire Line
+	22200 9650 22200 10150
+Connection ~ 22200 10150
+Wire Wire Line
+	22200 10150 22500 10150
+Wire Wire Line
+	9000 2500 9000 2550
+Text GLabel 14250 19050 2    50   Input ~ 0
+SDMMC1_CD
+Text GLabel 14250 18750 2    50   Input ~ 0
+SDMMC1_CMD
+Text GLabel 14250 18600 2    50   Input ~ 0
+SPI1_NPCS0_PA27
+Text GLabel 14250 18150 2    50   Input ~ 0
+FLEXCOM1_IO0_TWD_PA24
+Text GLabel 14250 18000 2    50   Input ~ 0
+FLEXCOM1_IO1_TWCK_PA23
+Text GLabel 14250 17850 2    50   Input ~ 0
+SDMMC1_CK
+Text GLabel 14250 17700 2    50   Input ~ 0
+SDMMC1_DAT3
+Text GLabel 14250 17550 2    50   Input ~ 0
+SDMMC1_DAT2
+Text GLabel 14250 17400 2    50   Input ~ 0
+SDMMC1_DAT1
+Text GLabel 14250 17250 2    50   Input ~ 0
+SDMMC1_DAT0
+Text GLabel 14250 17100 2    50   Input ~ 0
+FLEXCOM3_IO4_PA17
+Text GLabel 14250 16950 2    50   Input ~ 0
+FLEXCOM3_IO3_PA16
+Text GLabel 14250 16800 2    50   Input ~ 0
+FLEXCOM3_IO0_PA15
+Text GLabel 14250 16650 2    50   Input ~ 0
+FLEXCOM3_IO2_PA14
+Text GLabel 14250 16500 2    50   Input ~ 0
+FLEXCOM3_IO1_PA13
+Text GLabel 14250 15450 2    50   Input ~ 0
+STATUS_LED_PA6
+Text GLabel 15900 15500 0    50   Input ~ 0
+PWML3_PB8
+Text GLabel 15900 15400 0    50   Input ~ 0
+PWMH3_PB7
+Text GLabel 15900 15300 0    50   Input ~ 0
+PWML2_PB6
+Text GLabel 15900 15200 0    50   Input ~ 0
+PWMH2_PB5
+Text GLabel 15900 15000 0    50   Input ~ 0
+PWMEXTRG1_IRQ_PB3
+Text GLabel 15900 14800 0    50   Input ~ 0
+PWML1_PB1
+Text GLabel 15900 14700 0    50   Input ~ 0
+PWMH1_PB0
+Text GLabel 18000 15950 2    50   Input ~ 0
+FLEXCOM0_IO4_PC0
+Text GLabel 18000 16050 2    50   Input ~ 0
+SPI1_SPCK_CANTX0_PC1
+Text GLabel 18000 16150 2    50   Input ~ 0
+SPI1_MOSI_CANRX0_PC2
+Text GLabel 18000 16250 2    50   Input ~ 0
+SPI1_MISO_PC3
+Text GLabel 18000 16550 2    50   Input ~ 0
+SPI1_NPCS2_PC6
+Text GLabel 18000 16750 2    50   Input ~ 0
+PMIC_LBO
+Text GLabel 18000 18650 2    50   Input ~ 0
+I2C_TWD0_PC27
+Text GLabel 18000 18750 2    50   Input ~ 0
+I2C_TWCK0_PC28
+Text GLabel 20950 14850 2    50   Input ~ 0
+UART1_TX_PD3
+Text GLabel 20950 14750 2    50   Input ~ 0
+UART1_RX_PD2
+Text GLabel 20950 15050 2    50   Input ~ 0
+I2C_TWCK1_PD5
+Text GLabel 20950 14950 2    50   Input ~ 0
+I2C_TWD1_PD4
+Text GLabel 20950 15850 2    50   Input ~ 0
+FLEXCOM4_IO1_PD13
+Text GLabel 20950 15750 2    50   Input ~ 0
+FLEXCOM4_IO0_PD12
+Text GLabel 20950 16850 2    50   Input ~ 0
+AD4_PD23
+Text GLabel 20950 16750 2    50   Input ~ 0
+AD3_PD22
+Text GLabel 20950 16650 2    50   Input ~ 0
+AD2_PD21
+Text GLabel 20950 16550 2    50   Input ~ 0
+AD1_PD20
+Text GLabel 20950 16450 2    50   Input ~ 0
+AD0_PD19
+Text GLabel 20950 17050 2    50   Input ~ 0
+FLEXCOM4_IO4_PD25
+Text GLabel 20950 17150 2    50   Input ~ 0
+FLEXCOM2_IO0_PD26
+Text GLabel 20950 17250 2    50   Input ~ 0
+FLEXCOM2_IO1_PD27
+Text GLabel 20950 17350 2    50   Input ~ 0
+FLEXCOM2_IO2_PD28
+Text GLabel 20950 17450 2    50   Input ~ 0
+FLEXCOM2_IO3_PD29
+Text GLabel 20950 17550 2    50   Input ~ 0
+FLEXCOM2_IO4_PD30
+Text GLabel 20950 17650 2    50   Input ~ 0
+ADTRG_IRQ_PD31
+Text Notes 29700 14950 0    50   ~ 0
+1
+Text Notes 29650 17250 0    50   ~ 0
+24
+Text Notes 29000 17250 0    50   ~ 0
+48
+Text Notes 29000 14950 0    50   ~ 0
+25
+Text Notes 29700 15050 0    50   ~ 0
+2
+Text Notes 29700 15150 0    50   ~ 0
+3
+Text Notes 29700 15250 0    50   ~ 0
+4
+Text Notes 29700 15350 0    50   ~ 0
+5
+Text Notes 29700 15450 0    50   ~ 0
+6
+Text Notes 29700 15550 0    50   ~ 0
+7
+Text Notes 29700 15650 0    50   ~ 0
+8
+Text Notes 29700 15750 0    50   ~ 0
+9
+Text Notes 29650 15850 0    50   ~ 0
+10
+Text Notes 29650 15950 0    50   ~ 0
+11
+Text Notes 29650 16050 0    50   ~ 0
+12
+Text Notes 29650 16150 0    50   ~ 0
+13
+Text Notes 29650 16250 0    50   ~ 0
+14
+Text Notes 29650 16350 0    50   ~ 0
+15
+Text Notes 29650 16450 0    50   ~ 0
+16
+Text Notes 29650 16550 0    50   ~ 0
+17
+Text Notes 29650 16650 0    50   ~ 0
+18
+Text Notes 29650 16750 0    50   ~ 0
+19
+Text Notes 29650 16850 0    50   ~ 0
+20
+Text Notes 29650 16950 0    50   ~ 0
+21
+Text Notes 29650 17050 0    50   ~ 0
+22
+Text Notes 29650 17150 0    50   ~ 0
+23
+Text Notes 29000 15050 0    50   ~ 0
+26
+Text Notes 29000 15150 0    50   ~ 0
+27
+Text Notes 29000 15250 0    50   ~ 0
+28
+Text Notes 29000 15350 0    50   ~ 0
+29
+Text Notes 29000 15450 0    50   ~ 0
+30
+Text Notes 29000 15550 0    50   ~ 0
+31
+Text Notes 29000 15650 0    50   ~ 0
+32
+Text Notes 29000 15750 0    50   ~ 0
+33
+Text Notes 29000 15850 0    50   ~ 0
+34
+Text Notes 29000 15950 0    50   ~ 0
+35
+Text Notes 29000 16050 0    50   ~ 0
+36
+Text Notes 29000 16150 0    50   ~ 0
+37
+Text Notes 29000 16250 0    50   ~ 0
+38
+Text Notes 29000 16350 0    50   ~ 0
+39
+Text Notes 29000 16450 0    50   ~ 0
+40
+Text Notes 29000 16550 0    50   ~ 0
+41
+Text Notes 29000 16650 0    50   ~ 0
+42
+Text Notes 29000 16750 0    50   ~ 0
+43
+Text Notes 29000 16850 0    50   ~ 0
+44
+Text Notes 29000 16950 0    50   ~ 0
+45
+Text Notes 29000 17050 0    50   ~ 0
+46
+Text Notes 29000 17150 0    50   ~ 0
+47
+Wire Wire Line
+	28700 14950 28300 14950
+$Comp
+L power:GND #PWR?
+U 1 1 664C1693
+P 28300 14950
+AR Path="/5F44311A/664C1693" Ref="#PWR?"  Part="1" 
+AR Path="/664C1693" Ref="#PWR079"  Part="1" 
+F 0 "#PWR079" H 28300 14700 50  0001 C CNN
+F 1 "GND" V 28305 14822 50  0000 R CNN
+F 2 "" H 28300 14950 50  0001 C CNN
+F 3 "" H 28300 14950 50  0001 C CNN
+	1    28300 14950
+	0    1    -1   0   
+$EndComp
+Text GLabel 28300 16150 0    50   Input ~ 0
+I2C_TWCK0_PC28
+Wire Wire Line
+	17750 18750 18000 18750
+Wire Wire Line
+	17750 18650 18000 18650
+NoConn ~ 17750 18550
+NoConn ~ 18000 5550
+Wire Wire Line
+	25100 9650 25300 9650
+Wire Wire Line
+	25200 11550 25200 12050
 $EndSCHEMATC
