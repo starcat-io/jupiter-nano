@@ -1349,7 +1349,6 @@ NoConn ~ 16150 17200
 NoConn ~ 16150 17300
 NoConn ~ 16150 17400
 NoConn ~ 17750 16350
-NoConn ~ 17750 16450
 NoConn ~ 17750 16850
 NoConn ~ 17750 16950
 NoConn ~ 17750 17050
@@ -3559,11 +3558,6 @@ F 3 "" H 3750 3150 50  0001 C CNN
 $EndComp
 Text GLabel 4050 4000 0    50   Input ~ 0
 I2C_TWD1_PD4
-Text GLabel 7000 1450 0    50   Input ~ 0
-PMIC_INL
-Connection ~ 7200 1450
-Wire Wire Line
-	7200 1450 7000 1450
 Wire Wire Line
 	5400 4400 5350 4400
 Text GLabel 5200 2600 0    50   Input ~ 0
@@ -4812,7 +4806,7 @@ F 3 "~" H 7450 1600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text GLabel 5350 4400 0    50   Input ~ 0
-PMIC_INL
+VSYS_5V
 Text GLabel 10250 1450 2    50   Input ~ 0
 VSYS_5V
 Wire Wire Line
@@ -5600,7 +5594,7 @@ AD1_PD20
 Text GLabel 30450 15350 2    50   Input ~ 0
 AD0_PD19
 Text GLabel 30450 15950 2    50   Input ~ 0
-SPI1_NPCS2_PC6
+SPI1_NPCS1_PC5
 Text GLabel 30450 16050 2    50   Input ~ 0
 SPI1_MISO_PC3
 Text GLabel 30450 16150 2    50   Input ~ 0
@@ -6000,8 +5994,6 @@ F 3 "" H 30750 1900 60  0000 C CNN
 	5    30750 1900
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	17750 16550 18000 16550
 Wire Wire Line
 	2900 17000 2900 17300
 Wire Wire Line
@@ -6644,8 +6636,8 @@ Text GLabel 18000 16150 2    50   Input ~ 0
 SPI1_MOSI_CANRX0_PC2
 Text GLabel 18000 16250 2    50   Input ~ 0
 SPI1_MISO_PC3
-Text GLabel 18000 16550 2    50   Input ~ 0
-SPI1_NPCS2_PC6
+Text GLabel 18000 16450 2    50   Input ~ 0
+SPI1_NPCS1_PC5
 Text GLabel 18000 16750 2    50   Input ~ 0
 PMIC_LBO
 Text GLabel 18000 18650 2    50   Input ~ 0
@@ -6806,7 +6798,6 @@ Wire Wire Line
 Wire Wire Line
 	17750 18650 18000 18650
 NoConn ~ 17750 18550
-NoConn ~ 18000 5550
 Wire Wire Line
 	25100 9650 25300 9650
 Wire Wire Line
@@ -6833,4 +6824,7 @@ NoConn ~ 14000 18450
 Connection ~ 6800 2300
 Wire Wire Line
 	7700 2500 7950 2500
+Wire Wire Line
+	17750 16450 18000 16450
+NoConn ~ 17750 16550
 $EndSCHEMATC
