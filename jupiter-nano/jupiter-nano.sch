@@ -1975,8 +1975,6 @@ Text GLabel 23900 10250 0    50   Input ~ 0
 UART1_TX_PD3
 Text GLabel 21800 10150 0    50   Input ~ 0
 VDD_3V3
-Wire Wire Line
-	24300 10150 22700 10150
 $Comp
 L Device:R_Small R?
 U 1 1 5FC98137
@@ -5489,7 +5487,7 @@ $EndComp
 Text GLabel 10700 14700 2    50   Input ~ 0
 VDD_3V3
 Wire Wire Line
-	10300 15000 10700 15000
+	10300 15000 10600 15000
 Wire Wire Line
 	10300 14900 10700 14900
 Text GLabel 10700 15000 2    50   Input ~ 0
@@ -5720,12 +5718,12 @@ No Connect Pins
 $Comp
 L Connector:TestPoint_Small TP1
 U 1 1 65745967
-P 22200 9650
-F 0 "TP1" H 22248 9696 50  0000 L CNN
-F 1 "nRST" H 22248 9605 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 22400 9650 50  0001 C CNN
-F 3 "~" H 22400 9650 50  0001 C CNN
-	1    22200 9650
+P 23250 9200
+F 0 "TP1" H 23298 9246 50  0000 L CNN
+F 1 "nRST" H 23298 9155 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 23450 9200 50  0001 C CNN
+F 3 "~" H 23450 9200 50  0001 C CNN
+	1    23250 9200
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -6574,13 +6572,6 @@ F 3 "" H 10400 14800 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	21800 10150 22200 10150
-Wire Wire Line
-	22200 9650 22200 10150
-Connection ~ 22200 10150
-Wire Wire Line
-	22200 10150 22500 10150
-Wire Wire Line
 	9000 2500 9000 2550
 Text GLabel 14250 19050 2    50   Input ~ 0
 SDMMC1_CD
@@ -6837,4 +6828,43 @@ Text Notes 31600 16200 0    50   ~ 0
 I2SC0_CK
 Text Notes 31600 16300 0    50   ~ 0
 I2SC0_MCK
+Wire Wire Line
+	21800 10150 22500 10150
+Wire Wire Line
+	23250 9200 23250 10150
+Wire Wire Line
+	22700 10150 23250 10150
+Connection ~ 23250 10150
+Wire Wire Line
+	23250 10150 24300 10150
+$Comp
+L Connector:TestPoint_Small TP2
+U 1 1 62B02286
+P 10300 15550
+F 0 "TP2" H 10348 15596 50  0000 L CNN
+F 1 "TWCK" H 10348 15505 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 10500 15550 50  0001 C CNN
+F 3 "~" H 10500 15550 50  0001 C CNN
+	1    10300 15550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint_Small TP3
+U 1 1 62B188EC
+P 10600 15550
+F 0 "TP3" H 10648 15596 50  0000 L CNN
+F 1 "TWD" H 10648 15505 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 10800 15550 50  0001 C CNN
+F 3 "~" H 10800 15550 50  0001 C CNN
+	1    10600 15550
+	1    0    0    -1  
+$EndComp
+Connection ~ 10300 14900
+Wire Wire Line
+	10600 15550 10600 15000
+Connection ~ 10600 15000
+Wire Wire Line
+	10600 15000 10700 15000
+Wire Wire Line
+	10300 14900 10300 15550
 $EndSCHEMATC
