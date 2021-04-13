@@ -9226,7 +9226,7 @@
   (segment (start -241.3 -148.819521) (end -240.792 -149.327521) (width 0.508) (layer In2.Cu) (net 1))
   (segment (start -241.3 -147.574) (end -241.3 -148.819521) (width 0.508) (layer In2.Cu) (net 1))
   (segment (start -244.6863 -161.9423) (end -244.6782 -161.9504) (width 0.3048) (layer F.Cu) (net 1))
-  (segment (start -246.1006 -161.9423) (end -244.6863 -161.9423) (width 0.3048) (layer F.Cu) (net 1))
+  (segment (start -246.1006 -161.9423) (end -244.6863 -161.9423) (width 0.4064) (layer F.Cu) (net 1))
   (segment (start -195.403 -159.385) (end -196.993 -160.975) (width 0.508) (layer B.Cu) (net 1))
   (segment (start -193.724001 -159.374099) (end -195.403 -159.385) (width 0.508) (layer B.Cu) (net 1) (tstamp 6018ACC5))
   (via (at -193.724001 -159.374099) (size 0.4572) (drill 0.254) (layers F.Cu B.Cu) (net 1))
