@@ -2,7 +2,7 @@
 
   (general
     (thickness 1.6)
-    (drawings 133)
+    (drawings 135)
     (tracks 4489)
     (zones 0)
     (modules 193)
@@ -7881,7 +7881,7 @@
   (module libraries:ck-pushbutton-switch-smd-PTS810SJG250SMTRLFS (layer F.Cu) (tedit 0) (tstamp 5F5C22B9)
     (at -191.135 -168.91)
     (path /5F83C6CE)
-    (fp_text reference S1 (at -0.042486 2.354048 90) (layer F.SilkS)
+    (fp_text reference S1 (at 2.78384 -2.36728 90) (layer F.SilkS)
       (effects (font (size 0.381 0.381) (thickness 0.0762)))
     )
     (fp_text value PTS810SJG250SMTRLFS (at 0 0) (layer F.SilkS) hide
@@ -8871,6 +8871,12 @@
     )
   )
 
+  (gr_text WAKEUP (at -191.43726 -166.42842) (layer F.SilkS) (tstamp 60774D21)
+    (effects (font (size 0.635 0.635) (thickness 0.1016)))
+  )
+  (gr_text RESET (at -194.87134 -152.34158 90) (layer F.SilkS) (tstamp 60774D1E)
+    (effects (font (size 0.635 0.635) (thickness 0.1016)))
+  )
   (gr_text F4.4 (at -190.5381 -174.4091) (layer F.SilkS) (tstamp 60222294)
     (effects (font (size 0.508 0.508) (thickness 0.0762)))
   )
@@ -9078,7 +9084,7 @@
   (gr_text 17 (at -208.0641 -170.8658 90) (layer F.SilkS) (tstamp 5F8E7A9F)
     (effects (font (size 0.762 0.762) (thickness 0.1524)))
   )
-  (gr_text 24 (at -190.3857 -171.2468) (layer F.SilkS) (tstamp 5F8E7A9E)
+  (gr_text 24 (at -190.43904 -171.29252) (layer F.SilkS) (tstamp 5F8E7A9E)
     (effects (font (size 0.762 0.762) (thickness 0.1524)))
   )
   (gr_text 18 (at -205.5876 -170.8277 90) (layer F.SilkS) (tstamp 5F8E7A9D)
