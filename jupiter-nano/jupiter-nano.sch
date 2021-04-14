@@ -6879,9 +6879,9 @@ F 3 "~" H 2350 16050 50  0001 C CNN
 $EndComp
 Text Notes 2050 15500 0    79   ~ 0
 Native USB Port B Host
-Text GLabel 2850 16050 2    50   Input ~ 0
+Text GLabel 2850 15950 2    50   Input ~ 0
 USBB_P
-Text GLabel 2850 16150 2    50   Input ~ 0
+Text GLabel 2850 16050 2    50   Input ~ 0
 USBB_M
 Wire Wire Line
 	2550 16050 2850 16050
@@ -6898,14 +6898,14 @@ F 3 "" H 3600 16100 50  0001 C CNN
 	1    3600 16100
 	1    0    0    -1  
 $EndComp
-Text GLabel 2850 15850 2    50   Input ~ 0
+Text GLabel 2850 16150 2    50   Input ~ 0
 VBUS
 Wire Wire Line
-	2550 15850 2850 15850
-Wire Wire Line
-	3600 15950 3600 16100
-Wire Wire Line
-	2550 15950 3600 15950
-Wire Wire Line
 	2550 16150 2850 16150
+Wire Wire Line
+	2550 15850 3600 15850
+Wire Wire Line
+	3600 15850 3600 16100
+Wire Wire Line
+	2550 15950 2850 15950
 $EndSCHEMATC
