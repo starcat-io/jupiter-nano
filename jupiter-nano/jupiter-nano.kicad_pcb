@@ -9170,7 +9170,7 @@
   (gr_text TX (at -250.3932 -167.6146 90) (layer F.SilkS) (tstamp 5F8EAC51)
     (effects (font (size 0.635 0.635) (thickness 0.1016)))
   )
-  (gr_text "Jupiter Nano v1.0.0" (at -213.1314 -160.3502 90) (layer F.SilkS) (tstamp 5F9AA0B0)
+  (gr_text "Jupiter Nano v1.1.0" (at -213.1314 -160.3502 90) (layer F.SilkS) (tstamp 5F9AA0B0)
     (effects (font (size 0.762 0.762) (thickness 0.1524)))
   )
   (gr_text 3 (at -243.8273 -171.1579 90) (layer F.SilkS) (tstamp 5F8E7AA6)
