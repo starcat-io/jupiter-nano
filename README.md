@@ -7,7 +7,7 @@ SAMA5D27C-LD1G](https://www.microchip.com/en-us/product/ATSAMA5D27) microprocess
 Real Time Operating System (RTOS)](https://nuttx.apache.org/).
 
 It's available from [Crowd Supply](https://www.crowdsupply.com/) at the [Jupiter Nano project
-page](https://www.starcat.io/products/jupiter-nano/).
+page](https://www.crowdsupply.com/starcat/jupiter-nano).
 
 More information can be found at the [Starcat Jupiter Nano product page](https://www.starcat.io/products/jupiter-nano/).
 Software tools are available at the [Jupiter Nano software tools repository on
